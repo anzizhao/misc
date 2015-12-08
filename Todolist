@@ -1,11 +1,9 @@
 
 
-
 vim textobj
         在单词的末尾 粘帖  what it is 
-        
         删除下面相同部分
-        删除扩展 遇到逗号应该停止
+        删除扩展 遇到逗号应该停止 done
         
 sinpet 的使用
 

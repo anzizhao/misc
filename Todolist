@@ -1,6 +1,15 @@
 
 
+
 vim textobj
+        在单词的末尾 粘帖  what it is 
+        
+        删除下面相同部分
+        删除扩展 遇到逗号应该停止
+        
+sinpet 的使用
+
+
 
 tern   hucai的jsctags  对amd支持  可以试试  
 https://github.com/hushicai/jsctags
@@ -10,22 +19,14 @@ hucai 对adm也不管用呢 tern 何去何从
 
 jslint是否能够去掉函数声明再使用的
 
-vim 
-    textObj  可以怎么用
     
-    的需求
-1. 应该加入语法自检
-    jslint syntasticCheck(语法错误时  在错误语法上跳转)  done 
             
 2. 快速编辑
     模板使用
         html 的模板   class=row
         sinpet 可以使用
 
-3. 快速跳转
-    emotion  查找  行的跳转(这里找一些跳转到行 不是行首的) 
 
-4. 项目相关信息的查看
 
 **** ** ** ** ** ** ** ** ** **
 
@@ -34,16 +35,16 @@ vim
 
     http://stackoverflow.com/questions/18365315/jquerys-jquery-1-10-2-min-map-is-triggering-a-404-not-found
 
+
 1. 微信摇一摇实现   h5的 devicemotion事件的监听    
         http://www.cnblogs.com/moqiutao/p/4817347.html
-
-
 
 
 
 Q: 怎么减少css文件大小?   requirecss  后面可能会用到 
 
 如何将自己的工作日记  公司外访问?  
+        github ? 
 
 1. angular的使用应该用在我的日常生活中  ui-mobile  
 
@@ -110,8 +111,6 @@ Wed Jun 17 11:15:31 CST 2015
 Tue Jun 16 10:45:39 CST 2015
 1. 图片识别  gcor 神经网络 
 
-Thu Jun 11 11:42:43 CST 2015
-1 购买css权威指南书 
 
 
 

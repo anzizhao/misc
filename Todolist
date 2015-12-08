@@ -1,0 +1,127 @@
+
+
+vim textobj
+
+tern   hucai的jsctags  对amd支持  可以试试  
+https://github.com/hushicai/jsctags
+hucai 对adm也不管用呢 tern 何去何从 
+
+测试用例复用
+
+jslint是否能够去掉函数声明再使用的
+
+vim 
+    textObj  可以怎么用
+    
+    的需求
+1. 应该加入语法自检
+    jslint syntasticCheck(语法错误时  在错误语法上跳转)  done 
+            
+2. 快速编辑
+    模板使用
+        html 的模板   class=row
+        sinpet 可以使用
+
+3. 快速跳转
+    emotion  查找  行的跳转(这里找一些跳转到行 不是行首的) 
+
+4. 项目相关信息的查看
+
+**** ** ** ** ** ** ** ** ** **
+
+1. 使用map调试    
+    http://www.ruanyifeng.com/blog/2013/01/javascript_source_map.html
+
+    http://stackoverflow.com/questions/18365315/jquerys-jquery-1-10-2-min-map-is-triggering-a-404-not-found
+
+1. 微信摇一摇实现   h5的 devicemotion事件的监听    
+        http://www.cnblogs.com/moqiutao/p/4817347.html
+
+
+
+
+
+Q: 怎么减少css文件大小?   requirecss  后面可能会用到 
+
+如何将自己的工作日记  公司外访问?  
+
+1. angular的使用应该用在我的日常生活中  ui-mobile  
+
+
+
+1. 用在网站中可能构建会块点   critical css
+
+
+任务:
+1. 新OA 设计
+   第一阶段： 网站的构思， 界面的搭建 less或sass的学习使用
+        grunt 增加自动分支的保存当前分支   根据输入名字  自动分支 
+        
+   第二阶段： 靠近界面的内容逻辑编写 测试与模拟工具
+            1. css 样式 布局的学习 调试 花费大量时间
+   第三阶段： 接口层与测试
+
+
+下面内容done掉:
+
+
+资源：
+http://iatek.github.io/bootstrap-google-plus/#
+    个人主页:  
+        dashboards?  使用后台管理展示 或者一个项目的具体情况
+        参考:  http://wrapbootstrap.com/preview/WB0R5L90S  
+                http://www.bootply.com/render/85850
+        动态左栏:
+            http://bootsnipp.com/snippets/featured/navigation-sidebar-with-toggle
+            http://www.bootstrapzero.com/templates/sidebar  
+            http://www.bootply.com/render/88026#  这个手机端有折叠效果  
+            http://seegatesite.com/bootstrap/simple_sidebar_menu.html
+            
+            
+            
+1. jekyll 网站编写研究  字体的使用
+    农庄网站编写 正在进入正规  菜单和联系人 已经完成差不多
+        接触技术:
+            liquid流语法 
+            jekyll 使用ruby编写  后面debug也是一个问题 
+            微信识别网页二维码
+
+ 
+
+
+网站的滚动显示置顶和header变化效果怎么做？ 
+1. 插件 某个元素滚动到某个位置就固定
+2. thinkster.io网站的logo挺有格调  就一个蓝色方格加一个t
+
+
+
+
+小工具:
+Wed Jul  8 15:25:32 CST 2015
+1. js 怎么在函数中间跳到头或者尾 
+   done  使用匹配跳转  能够较好的完成任务  可以尝试开发vim插件
+2. 声明完函数后 我先快速跳转到可以实现的地方  实现和声明快速的跳转
+    done 可以跳到函数的末尾完成这项任务的
+
+有趣的想法:
+    开发vim的插件
+Wed Jun 17 11:15:31 CST 2015
+1. vim的配置文件都能放到github上面  且觉得很用
+Tue Jun 16 10:45:39 CST 2015
+1. 图片识别  gcor 神经网络 
+
+Thu Jun 11 11:42:43 CST 2015
+1 购买css权威指南书 
+
+
+
+Mon Jun  8 12:36:29 CST 2015
+done 
+1  使用angular实现 搜索匹配功能 匹配内容为服务器返回的:(这需要后台比较强大) 一般为页面内容的搜索
+   
+done 1. grunt 使用,考虑自动化
+
+
+done 2. bootstrap再研究
+done 3. cachefactory有什么用呢?
+done 1. 缓冲问题  requirejs 和angular视图

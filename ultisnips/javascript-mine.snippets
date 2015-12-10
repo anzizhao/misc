@@ -1,0 +1,164 @@
+priority -50
+
+
+snippet mprotg "my protocol" 
+'${1:get}': {method: "GET", params: {app:'cc', op:'cc', paramDes:'cc'}, headers: {'Oa-Token': oaStorage.getOaToken},transformResponse: commonResponse },
+endsnippet
+
+snippet mprotp "my protocol" 
+'${1:post}': {method: "POST", params: {app:'cc', op:'cc', paramDes:'cc'}, headers: {'Oa-Token': oaStorage.getOaToken}, transformRequest:postRequest,  transformResponse:  commonResponse},         
+endsnippet
+
+
+snippet mprotfun "my protocol template" 
+function ${1:template}(init_fn){
+    function deal(data){
+        $timeout(function (){
+            var ${2:obj} = data.${3:obj};
+            //字段转换
+            //获取成功后  做一些处理
+            if( init_fn instanceof Function ){
+                init_fn.call(this); 
+            }
+        });
+    }
+    var proto = new (transferProto.get())();
+    var param = {
+        appParam: null,
+        param: null,
+    };
+    Wrap(proto.cc, param, deal, proto); 
+}
+endsnippet
+
+snippet micv "my init controller variable" 
+var Wrap = businessWrap.wrap; 
+var mv = this; 
+//etc 一些常量的配置
+mv.etc = {
+    uid : null,
+};
+mv.status = {
+    db: {
+        isLoading: false,  
+        length: null,
+    } 
+};
+mv.select = {};
+mv.${1:db}= [];
+
+//zzv        
+mv.input = {
+};   
+
+endsnippet
+
+snippet mst "my simple return obj template" 
+
+/*global define ,window*/
+define(['angular'], 
+       function(angular){
+           'use strict';
+
+           return {
+           };
+       }
+      ) ;
+endsnippet
+
+snippet mic "my init controller variable init function bindevent" 
+
+/*global define,scope,window*/
+/*jslint todo: true */
+
+'use strict';
+define(['angular', 
+       'js/base/utility',
+       'jquery',
+       'uiRouter',
+       'js/base/baseService.factory',
+       'js/protocol/Protocol.factory',
+], 
+function(angular,utility){
+    function cc($scope, transferProto, $timeout, businessWrap, oaStorage, $location, $anchorScroll, $state){
+        var Wrap = businessWrap.wrap; 
+        var mv = this; 
+        //etc 一些常量的配置
+        mv.etc = {
+            uid : null,
+        };
+        mv.status = {
+            db: {
+                isLoading: false,  
+                length: null,
+            } 
+            isMobile: false,
+        };
+        mv.db = [];
+
+        //zzv        
+        mv.input = {
+        };   
+
+        function init(){
+            var status = mv.status;
+            statua.isMobile = devDetect.detect();
+            if ( mv.isMobile ){
+                
+            }
+
+            var uid = oaStorage.getUid();
+            if ( uid ){
+                mv.etc.uid = uid;
+            }
+            
+            $location.hash(anchor); 
+            $anchorScroll(); 
+
+
+            var status = mv.status; 
+
+            //获取协议
+            function afterGet(){
+                status.db.isLoading = false;
+                status.db.length = utility.objLength(mv.underlingdb);
+                return ;  
+            } 
+            status.db.isLoading = true;
+            cc(afterGet);
+        }
+
+        function listenErr(){
+            function errHandle(){
+                //协议状态初始化
+                var status = mv.status; 
+                $timeout(function(){
+                    status.db.isLoading = false; 
+                });
+            }
+            $scope.$on('proto-err', errHandle);
+        }
+
+        function bindEvent(){
+            listenErr(); 
+        }
+
+        var mf = {
+
+        };
+
+        utility.addFuncToThis(mf, this); 
+        init(); 
+        bindEvent(); 
+    }
+    cc.$inject = ['$scope', 'transferProto', '$timeout', 'businessWrap','oaStorage', '$location', '$anchorScroll', '$state'];
+
+
+    return angular.module('cc', [
+        'commonService', 
+        'baseService',
+        'ui.router'])
+        .controller('cc', cc);
+}); 
+
+endsnippet

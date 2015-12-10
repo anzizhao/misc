@@ -6,6 +6,8 @@ vim textobj
         删除扩展 遇到逗号应该停止 done
         
 sinpet 的使用
+sinpmate 跟ultisinppt 模板不兼容
+https://github.com/garbas/vim-snipmate
 
 
 

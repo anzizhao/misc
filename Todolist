@@ -1,12 +1,17 @@
 
+6.  controller etc status 继承什么的 深度拷贝  不用管前面有没有定义掉
+
+3. 模板
+    这个有空搞搞
+
+html ><  之间的内容
 
 vim textobj
         在单词的末尾 粘帖  what it is 
         删除下面相同部分
-        删除扩展 遇到逗号应该停止 done
-        
-sinpet 的使用
 
+sinpet 的使用
+        这个要搞起来
 
 
 tern   hucai的jsctags  对amd支持  可以试试  

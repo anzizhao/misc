@@ -1,0 +1,123 @@
+priority -50
+
+
+snippet aistanelse "ignore else " 
+/* istanbul ignore else  */
+endsnippet
+
+snippet aistannext "ignore next " 
+/* istanbul ignore next */
+endsnippet
+
+snippet app "post protocol" 
+'${1:post}': {method: "POST", params: {app:'${2:xxx}', op:'${3:xxx}', op2:${4:''} }, headers: {'Oa-Token': oaStorage.getOaToken}, transformRequest:cmf.postRequest,  transformResponse: cmf.commonResponse},         
+endsnippet
+
+snippet apput "post protocol" 
+'${1:post}': {method: "POST", params: {app:'${2:xxx}', op:'${3:xxx}', op2:${4:''} }, headers: {'Oa-Token': oaStorage.getOaToken}, transformRequest:cmf.putRequest,  transformResponse: cmf.commonResponse},         
+endsnippet
+
+snippet apg "get protocol" 
+'${1:get}': {method: "GET", params: {app:'${2:xxx}', op:'${3:xxx}',op2:'${4}'}, headers: {'Oa-Token': oaStorage.getOaToken},  transformResponse:  cmf.commonResponse},         
+
+endsnippet
+
+
+snippet agcount "common get count " 
+function ${1:getCount}(init_fn){ 
+	function afterGet(data)
+		$timeout(function(){
+			var pagination = mv.pagination; 
+			var obj = data.obj;
+			pagination.itemNum = obj.count; 
+			/* istanbul ignore else  */
+			if (init_fn instanceof Function ) {
+				init_fn.call(this); 
+			}
+		});
+	}
+	var  prot = new (cardProto.get())();
+	var obj = {};
+	Wrap(prot.${2:getCount}, obj, afterGet,prot); 
+}
+endsnippet
+
+snippet apagechange "pagechange" 
+function pageChange(){ //更改页面  重新获取列表
+	function afterGet() {
+		var status = mv.status; 
+		status.db.isLoading = true;
+		$location.hash(mv.etc.anchor.hash); 
+		$anchorScroll();
+	}
+
+	var  cur = mv.pagination.curPage;  
+	var status = mv.status; 
+	status.db.isLoading = true;
+	//获取列表 
+	var limit = mv.pagination.itemsPerPage;
+	var offset =  (cur -1)* limit;  
+
+	switch(mv.etc.model) {
+		case mv.define.${1:MODEL_}:
+			${2:getList}(offset, limit, afterGet); 
+			break;
+		/*istanbul ignore next*/
+		default:
+			console.error("unknown model " + mv.etc.model );
+	}
+}
+endsnippet
+
+snippet aglist "common get list" 
+        function ${1:getList} (offset, limit, init_fn){ 
+            function afterGet(data){
+                $timeout(function(){
+                    var fdb = data.list;
+                    var tdb = [];
+					//key change 
+                    var cond = {
+                    };
+                    angular.forEach(fdb, function(value){
+                        var item = {};
+                        util.obj.changeKey(value,item, cond);
+                        tdb.push(item);
+                    });
+					// value change 
+                    mv.db = tdb;
+                    /* istanbul ignore else  */
+                    if (init_fn instanceof Function ) {
+                        init_fn.call(this); 
+                    }
+                });
+            }
+            var  prot = new (cardProto.get())();
+            var obj = {};
+            obj.offset = offset;
+            obj.limit  = limit;
+            Wrap(prot.$${2:getList}, obj, afterGet,prot); 
+        }
+endsnippet
+snippet apfun "my protocol template" 
+
+
+function ${1:template}(init_fn){
+    function deal(data){
+        $timeout(function (){
+            var ${2:obj} = data.${3:obj};
+            //字段转换
+            //获取成功后  做一些处理
+            if( init_fn instanceof Function ){
+                init_fn.call(this); 
+            }
+        });
+    }
+    var proto = new (xxxProto.get())();
+    var param = {
+        appParam: null,
+        opParam: null,
+    };
+    Wrap(proto.cc, param, deal, proto); 
+}
+endsnippet
+

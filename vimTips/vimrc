@@ -197,7 +197,7 @@ Plugin 'gorodinskiy/vim-coloresque'
 
 Plugin 'kana/vim-textobj-user'
 "Plugin 'kana/vim-textobj-function'
-Plugin 'anzizhao/vim-textobj-function'
+"Plugin 'anzizhao/vim-textobj-function'
 Plugin 'anzizhao/vim-textobj-function-javascript'            
 
 

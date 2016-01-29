@@ -1,0 +1,2 @@
+1 goagent 代理 需要配置.bowerrc  proxy
+2 开发使用bower 管理包 

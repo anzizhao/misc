@@ -1,0 +1,9 @@
+{
+    "loadEagerly": [
+        "creative.js",
+        "creative.css"
+            ],
+        "plugins": {
+           "angular":{} 
+       }
+}

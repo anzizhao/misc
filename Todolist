@@ -4,6 +4,14 @@
 
 9.  
 
+2016年1月5日
+1. 还是习惯vim的操作， 准备搞gvim吧
+2. 近期学习  nuclearmail  使用react编写的
+http://ianobermiller.github.io/nuclearmail/  
+为了学习这个  需要了解es6 或者es2015的一些语法  =》 （）{}类似一些这样的语法， 大概看懂就可以  
+主要还是搞懂react 主键思想来  完成一个比较复杂的网站构建   
+
+
 8. company 是否可以使用缓冲技术 不停的重新获取比较麻烦  someday 
 
 7. 关机脚本   将所有个人相关的提交
@@ -18,7 +26,6 @@ html ><  之间的内容
 vim textobj
         在单词的末尾 粘帖  what it is 
         删除下面相同部分
-        删除扩展 遇到逗号应该停止 done
         
 sinpet 的使用
 sinpmate 跟ultisinppt 模板不兼容

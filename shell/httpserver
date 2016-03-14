@@ -1,0 +1,13 @@
+#! /bin/bash
+if [ -n "$1" ]; then 
+    dir=$1; 
+else
+    dir='.';
+fi
+if [ -n "$2" ]; then 
+    port=$2; 
+else
+    port=8000;
+fi
+
+/home/zja/bin/sofeware/http-server/bin/http-server $dir -a 0.0.0.0 -p $port 

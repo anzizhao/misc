@@ -14,7 +14,6 @@ runtime! debian.vim
 " NOTE: debian.vim sets 'nocompatible'.  Setting 'compatible' changes numerous
 " options, so any other options should be set AFTER setting 'compatible'.
 set nocompatible  "关闭vim一致性原则
-filetype off
 filetype plugin on
 filetype indent on
 
@@ -36,11 +35,6 @@ endif
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 "endif
 
-" Uncomment the following to have Vim load indentation rules and plugins
-" according to the detected filetype.
-"if has("autocmd")
-  "filetype plugin indent on
-"endif
 
 " The following are commented out as they cause vim to behave a lot
 " differently from regular Vi. They are highly recommended though.
@@ -87,7 +81,7 @@ set splitbelow
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vundle settingss
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=/home/zja/.vim/bundle/Vundle.vim
 "set rtp+=~/.vim/bundle/unite.vim/autoload/unite.vim
 "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 call vundle#begin()
@@ -108,9 +102,12 @@ Plugin 'scrooloose/nerdcommenter'
 ""结构体自动补全 snipmate 
 ""Plugin 'msanders/snipmate.vim'
 ""符号对其 :Tab /:
+
 "Plugin 'godlygeek/tabular'
+
 ""JavaScript bundle for vim, this bundle provides syntax and indent plugins.
-"Plugin 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
+
 ""底栏
 Plugin 'bling/vim-airline'
 "" about "surroundings": parentheses, brackets, quotes, XML tags
@@ -159,7 +156,6 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'fholgado/minibufexpl.vim'
 "" snips which needs python and python3
 Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
 ""底栏
 ""Plugin 'Lokaltog/vim-powerline'
 ""taglist
@@ -176,13 +172,12 @@ Plugin 'honza/vim-snippets'
 Plugin 'marijnh/tern_for_vim'
 "SupperTab  自动补全插件
 Plugin 'ervandew/supertab'
-Plugin 'lepture/vim-javascript'
 
 Plugin 'majutsushi/tagbar'
 "" about "surroundings": parentheses, brackets, quotes, XML tags
 Plugin 'tpope/vim-surround' 
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'einars/js-beautify'
+"Plugin 'maksimr/vim-jsbeautify'
+"Plugin 'einars/js-beautify'
 Plugin 'mattn/calendar-vim'
 "Plugin 'genoma/vim-less'
 Plugin 'groenewege/vim-less'
@@ -197,17 +192,26 @@ Plugin 'gorodinskiy/vim-coloresque'
 
 Plugin 'kana/vim-textobj-user'
 "Plugin 'kana/vim-textobj-function'
-"Plugin 'anzizhao/vim-textobj-function'
+Plugin 'anzizhao/vim-textobj-function'
 Plugin 'anzizhao/vim-textobj-function-javascript'            
+
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
 
 Plugin 'mxw/vim-jsx'
 Plugin 'isRuslan/vim-es6'
 
-"python 自动缩进
-Plugin 'vim-scripts/indentpython.vim'
-Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-repeat'
+Plugin 'wookiehangover/jshint'
+
+
 
 call vundle#end()
+
+filetype off
+filetype plugin indent on
 
 let mapleader=","
 let g:mapleader=","
@@ -255,16 +259,17 @@ map as   ysiw
 "map <leader>Uw  <Esc>gUw 
 "map <leader>UU  <ESC>gUU 
 
-map <c-f> :call JsBeautify()<cr>
+"map <c-f> :call JsBeautify()<cr>
 " or
-autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
+"autocmd FileType javascript noremap <buffer>  <c-f> :call JsBeautify()<cr>
 " for html
-autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
+"autocmd FileType html noremap <buffer> <c-f> :call HtmlBeautify()<cr>
 " for css or scss
-autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
+"autocmd FileType css noremap <buffer> <c-f> :call CSSBeautify()<cr>
 
 "autocmd FileType less noremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 
+au BufRead,BufNewFile *.less setfiletype css
 
 "noremap <Leader>m :w <BAR> !lessc % > %:t:r.css<CR><space>
 "let g:tagbar_autoclose = 1
@@ -286,24 +291,9 @@ let g:tagbar_type_javascript = {
 syntax enable
 "set background=dark
 set number "设置字体和大小
-"set guifont=Courier_new:h14:b:cDEFAULT
 
-"colorscheme solarized
-"let g:solarized_termcolors=16
-
-"let g:solarized_termtrans =1
-"let g:solarized_degrade=0
-"let g:solarized_bold=1
-"let g:solarized_underline=1
-"let g:solarized_italic=1
-"let g:solarized_contrast="normal"
-"let g:solarized_visibility="high"
-"let g:solarized_diffmode="normal"
-"let g:solarized_hitrail=0
-"let g:solarized_menu=1
 
 "color solarized
-
 set t_Co=256
 color molokai 
 let g:molokai_original = 1
@@ -346,78 +336,6 @@ let g:airline#extensions#default#layout = [
             \ [ 'warning' ]
             \ ]
 
-"let g:airline_theme = "lucius" "设定主题
-"let g:airline#extensions#whitespace#checks = [  ]
-"let g:airline_detect_whitespace          = 0 "关闭空白符检测
-"let g:airline#extensions#tabline#enabled = 1 "顶部tab栏显示
-"let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
-""let g:airline_theme = "hybrid" "设定主题
-"let g:airline#extensions#tabline#buffer_idx_mode = 1
-"let g:airline#extensions#tabline#buffer_nr_format = '%s: '
-"
-"let g:airline#extensions#tabline#fnamecollapse = 1
-
-" airline symbols
-"if !exists('g:airline_symbols')
-    "let g:airline_symbols = {}
-"endif
-" unicode symbols
-"let g:airline_left_sep = '»'
-"let g:airline_left_sep = '▶'
-"let g:airline_right_sep = '«'
-"let g:airline_right_sep = '◀'
-"let g:airline_symbols.linenr = '␊'
-"let g:airline_symbols.linenr = '␤'
-"let g:airline_symbols.linenr = '¶'
-"let g:airline_symbols.branch = '⎇'
-"let g:airline_symbols.paste = 'ρ'
-"let g:airline_symbols.paste = 'Þ'
-"let g:airline_symbols.paste = '∥'
-"let g:airline_symbols.whitespace = 'Ξ'
-
-" powerline symbols
-"let g:airline_left_sep = ''
-"let g:airline_left_alt_sep = ''
-"let g:airline_right_sep = ''
-"let g:airline_right_alt_sep = ''
-"let g:airline_symbols.branch = ''
-"let g:airline_symbols.readonly = ''
-"let g:airline_symbols.linenr = ''
-
-" old vim-powerline symbols
-"let g:airline_left_sep = '⮀'
-"let g:airline_left_alt_sep = '⮁'
-"let g:airline_right_sep = '⮂'
-"let g:airline_right_alt_sep = '⮃'
-"let g:airline_symbols.branch = '⭠'
-"let g:airline_symbols.readonly = '⭤'
-"let g:airline_symbols.linenr = '⭡'
-"
-"
-"
-""""""""""""""
-"  DBGPavim  "
-""""""""""""""
-"let g:dbgPavimPort = 9089
-"let g:dbgPavimBreakAtEntry = 0 
-
-""""""""""""""""""""
-"  DoxygenToolkit  "
-""""""""""""""""""""
-"let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
-"let g:DoxygenToolkit_paramTag_pre="@Param "
-"let g:DoxygenToolkit_returnTag="@return "
-"let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
-"let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
-"let g:DoxygenToolkit_authorName="cyleung"
-"let g:DoxygenToolkit_licenseTag="license" 
-"
-"let g:snips_author="cyleung"
-"
-""map <leader>da :DoxAuthor<CR>
-"map <leader>df :Dox<CR>
-"
-"my vim settings
 
 
 """""""""
@@ -492,37 +410,6 @@ nnoremap ; :
 "call unite#custom#profile('default', 'context', { 'prompt_direction': 'bellow' })
 "let g:unite_enable_split_vertically = 1
 "
-"let g:startify_custom_header = [
-"    \ ' ██████╗██╗   ██╗    ██╗     ███████╗██╗   ██╗███╗   ██╗ ██████╗ ',
-"    \ '██╔════╝╚██╗ ██╔╝    ██║     ██╔════╝██║   ██║████╗  ██║██╔════╝ ',
-"    \ '██║      ╚████╔╝     ██║     █████╗  ██║   ██║██╔██╗ ██║██║  ███╗',
-"    \ '██║       ╚██╔╝      ██║     ██╔══╝  ██║   ██║██║╚██╗██║██║   ██║',
-"    \ '╚██████╗   ██║██╗    ███████╗███████╗╚██████╔╝██║ ╚████║╚██████╔╝',
-"    \ ' ╚═════╝   ╚═╝╚═╝    ╚══════╝╚══════╝ ╚═════╝ ╚═╝  ╚═══╝ ╚═════╝ ',
-"    \ '']
-"
-"let g:startify_custom_footer = [
-"    \ '                                                                   ',
-"    \ '                                                                   ',
-"    \ '(¯`·._.·(¯`·._.·(¯`·._.· Vim save my life ·._.·´¯)·._.·´¯)·._.·´¯) ',
-"    \ '                                                                   ',
-"    \ '                                                                   ',
-"    \ '                                                                   ',
-"    \ '                  .__....._             _.....__,                  ',
-"    \ '                    .": o :":         ;": o :".                    ',
-"    \ '                    `. `-" .".       .". `-" ."                    ',
-"    \ '                      `---"             `---"                      ',
-"    \ '                                                                   ',
-"    \ '            _...----...      ...   ...      ...----..._            ',
-"    \ '         .-"__..-"""----    `.  `"`  ."    ----"""-..__`-.         ',
-"    \ '        ".-"   _.--""""       `-._.-"       """"--._   `-.`        ',
-"    \ '        "  .-""                  :                  `"-.  `        ',
-"    \ '          "   `.              _."""._              ."   `          ',
-"    \ '                `.       ,.-""       ""-.,       ."                ',
-"    \ '                  `.                           ."                  ',
-"    \ '                    `-._                   _.-"                    ',
-"    \ '                        `""--...___...--""`                        ',
-"    \ ''] 
 
 set grepprg=ack-grep\ -a\ --nocolor           
 
@@ -588,7 +475,7 @@ autocmd QuickFixCmdPost *log* cwindow
 "  syntax check  "
 "  """"""""""""""""""
 let g:syntastic_javascript_checkers = ['eslint']
-"let g:syntastic_javascript_jshint_exec='/usr/local/share/node-v4.1.0-linux-x64/bin/eslint'
+"let g:syntastic_javascript_jshint_exec='/usr/local/bin/jshint'
 "set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
@@ -638,37 +525,6 @@ let g:miniBufExplBRSplit=0
 """""""""""""""""""""""""""
 "  auto update tags file  "
 """""""""""""""""""""""""""
-"function! DelTagOfFile(file)
-"    let fullpath = a:file
-"    let cwd = getcwd()
-"    let tagfilename = cwd . "/tags"
-"    let f = substitute(fullpath, cwd . "/", "", "")
-"    let f = escape(f, './')
-"    let cmd = 'sed -i "/' . f . '/d" "' . tagfilename . '"'
-"    let resp = system(cmd)
-"endfunction
-"
-"function! UpdatePHPTags()
-"    let f = expand("%:p")
-"    let cwd = getcwd()
-"    let tagfilename = cwd . "/tags"
-"    let cmd = 'ctags -R  --fields=+aimS  --languages=php &'
-"    call DelTagOfFile(f)
-"    let resp = system(cmd)
-"endfunction
-"autocmd BufWritePost *.php call UpdatePHPTags()
-"
-"
-"let g:phpqa_php_cmd='/usr/local/php/bin/php'
-"let g:phpqa_codesniffer_cmd='/usr/local/php/bin/phpcs'
-"let g:phpqa_messdetector_cmd='/usr/local/php/bin/phpmd'
-"let g:phpqa_codecoverage_file = "/tmp/clover.xml"
-"" Show markers for lines that ARE covered by tests (default = 1)
-"let g:phpqa_codecoverage_showcovered = 0
-"
-"let g:phpqa_messdetector_autorun = 0
-"let g:phpqa_codesniffer_autorun = 0
-"let g:phpqa_codecoverage_autorun = 0
 
 
 set ttimeoutlen=1
@@ -699,13 +555,27 @@ let g:ycm_filetype_blacklist = {
       \ 'unite' : 1,
       \ 'html' : 1,
       \}
-" vim-javascript
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1 = "inc"
 
 
-let g:EasyMotion_do_mapping = 0 
+"vim-javascript
+let javascript_enable_domhtmlcss = 1
+let b:javascript_fold = 1
+let javascript_ignore_javaScriptdoc = 1
+
+let g:javascript_conceal_function   = "ƒ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "⇚"
+let g:javascript_conceal_undefined  = "¿"
+let g:javascript_conceal_NaN        = "ℕ"
+let g:javascript_conceal_prototype  = "¶"
+let g:javascript_conceal_static     = "•"
+let g:javascript_conceal_super      = "Ω"
+
+
+"vim-jsx
+let g:jsx_ext_required = 0
+
 " Disable default mappings
 
 " Bi-directional find motion
@@ -721,14 +591,17 @@ let g:EasyMotion_do_mapping = 0
  "nmap sw <Plug>(easymotion-w)
 "
 " " Turn on case insensitive feature
- let g:EasyMotion_smartcase = 1
+ "let g:EasyMotion_smartcase = 1
 "
 " " JK motions: Line motions
- map <Leader>j <Plug>(easymotion-j)
- map <Leader>k <Plug>(easymotion-k)
- nmap s <Plug>(easymotion-sn)
 
-autocmd FileType js nested :TagbarOpen
+let g:EasyMotion_prompt = 'for {n} character(s):'
+let g:EasyMotion_do_mapping = 0 
+"nmap <Leader>s <Plug>(easymotion-j)
+"nmap <Leader>d <Plug>(easymotion-k)
+let g:EasyMotion_smartcase = 1
+
+"autocmd FileType js nested :TagbarOpen
 
 
 "showmarks
@@ -765,7 +638,7 @@ nmap <leader>dm :DelimitMateSwitch<cr>
 nmap <leader>st :ShowMarksToggle<cr>
 
 
-source ~/.vim/plugin/cscope_maps.vim
+"source ~/.vim/plugin/cscope_maps.vim
 "source ~/.vim/bundle/vim-textobj-javascript/plugin/textobj/javascript.vim
 
 
@@ -773,12 +646,12 @@ source ~/.vim/plugin/cscope_maps.vim
 map ty "ay
 map tp "ap
 
-"uncompress html
-":s/<[^>]*>/\r&\r/g
-":g/^$/d
 
 
-au BufRead,BufNewFile *.less setfiletype css
+
+"python 自动缩进
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'nvie/vim-flake8'
 
 "python 配置
 au BufNewFile,BufRead *.py,*.recipe

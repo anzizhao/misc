@@ -1,0 +1,3659 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Lifeq bg1 API ",
+        "description": "Lifeq API\u8bf4\u660e\u6587\u6863(\u5185\u90e8\u63a5\u53e3)",
+        "version": "1.0.0"
+    },
+    "host": "lifeqtest.api.koalac.com",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/api/": {
+            "get": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "api\u5165\u53e3",
+                "description": "api\u5165\u53e3",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "gretting",
+                        "schema": {
+                            "description": "\u95ee\u5019\u8bed",
+                            "type": "string",
+                            "format": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/ping": {
+            "get": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "api\u5165\u53e3\u6d4b\u8bd5",
+                "description": "api\u5165\u53e3\u6d4b\u8bd5",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "gretting",
+                        "schema": {
+                            "description": "ping",
+                            "type": "string",
+                            "format": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/404": {
+            "get": {
+                "tags": [
+                    "api"
+                ],
+                "summary": "api\u63a5\u53e3404\u72b6\u6001",
+                "description": "api\u63a5\u53e3404\u72b6\u6001",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "gretting",
+                        "schema": {
+                            "description": "404",
+                            "type": "string",
+                            "format": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/company": {
+            "get": {
+                "tags": [
+                    "company"
+                ],
+                "summary": "\u83b7\u53d6\u5206\u516c\u53f8\u5217\u8868",
+                "description": "\u83b7\u53d6\u5168\u90e8\u516c\u53f8\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u83b7\u53d6\u5206\u516c\u53f8\u5217\u8868",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u83b7\u53d6\u5206\u516c\u53f8\u5217\u8868\n/api/bg1/company",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u83b7\u53d6\u5206\u516c\u53f8\u5217\u8868\n/api/bg1/company",
+                                            "type": "object",
+                                            "$ref": ""
+                                        },
+                                        "list": {
+                                            "description": "\u83b7\u53d6\u5206\u516c\u53f8\u5217\u8868\n/api/bg1/company",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/companySubList"
+                                            }
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/oplog/log/{logId}": {
+            "get": {
+                "tags": [
+                    "oplog"
+                ],
+                "summary": "\u6839\u636e\u65e5\u5fd7id\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u4fe1\u606f",
+                "description": "\u6839\u636e\u65e5\u5fd7id\uff0c\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u4fe1\u606f",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "logId",
+                        "in": "path",
+                        "description": "\u64cd\u4f5c\u65e5\u5fd7id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u65e5\u5fd7id\uff0c\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u4fe1\u606f",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/oplogDetailInfo"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/oplog/log": {
+            "get": {
+                "tags": [
+                    "oplog"
+                ],
+                "summary": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868",
+                "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "query",
+                        "description": "\u5e97\u94faid",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "startTime",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:\u5f00\u59cb\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "endTime",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:\u7ed3\u675f\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "\u5217\u8868\u504f\u79fb\u91cf",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "\u5217\u8868\u5bb9\u91cf",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\n/api/bg1/oplog/log",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\n/api/bg1/oplog/log",
+                                            "type": "object",
+                                            "$ref": ""
+                                        },
+                                        "list": {
+                                            "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\n/api/bg1/oplog/log",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/oplogSearcherList"
+                                            }
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/oplog/log/count": {
+            "get": {
+                "tags": [
+                    "oplog"
+                ],
+                "summary": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\u7684\u6570\u91cf",
+                "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\u7684\u6570\u91cf",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "query",
+                        "description": "\u5e97\u94faid",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "startTime",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:\u5f00\u59cb\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "endTime",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:\u7ed3\u675f\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\u7684\u6570\u91cf",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\u7684\u6570\u91cf\n/api/bg1/oplog/log/count",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\u7684\u6570\u91cf\n/api/bg1/oplog/log/count",
+                                            "type": "object",
+                                            "$ref": "#/definitions/operationLogCount"
+                                        },
+                                        "list": {
+                                            "description": "\u641c\u7d22\u83b7\u53d6\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\u7684\u6570\u91cf\n/api/bg1/oplog/log/count",
+                                            "type": "array",
+                                            "items": ""
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/places/provinces/{provinceId}/cities": {
+            "get": {
+                "tags": [
+                    "places"
+                ],
+                "summary": "\u83b7\u53d6\u6307\u5b9a\u7701\u4efd\u4e0b\u7684\u57ce\u5e02\u5217\u8868",
+                "description": "\u6839\u636e\u7701\u4efdid\uff0c\u83b7\u53d6\u5176\u8f96\u4e0b\u7684\u76f8\u5173\u57ce\u5e02\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "provinceId",
+                        "in": "path",
+                        "description": "\u7701\u4efdid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u7701\u4efdid\uff0c\u83b7\u53d6\u5176\u8f96\u4e0b\u7684\u76f8\u5173\u57ce\u5e02\u5217\u8868",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/placesCitiesByProvince"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/places/cities/{cityId}": {
+            "get": {
+                "tags": [
+                    "places"
+                ],
+                "summary": "\u83b7\u53d6\u57ce\u5e02\u8be6\u7ec6\u4fe1\u606f",
+                "description": "\u6839\u636e\u57ce\u5e02id\uff0c\u83b7\u53d6\u57ce\u5e02\u8be6\u7ec6\u4fe1\u606f",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "cityId",
+                        "in": "path",
+                        "description": "\u57ce\u5e02id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u57ce\u5e02id\uff0c\u83b7\u53d6\u57ce\u5e02\u8be6\u7ec6\u4fe1\u606f",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/placesCityInfo"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/places/districts/{districtId}": {
+            "get": {
+                "tags": [
+                    "places"
+                ],
+                "summary": "\u83b7\u53d6\u884c\u653f\u533a\u8be6\u7ec6\u4fe1\u606f",
+                "description": "\u6839\u636e\u884c\u653f\u533aid\uff0c\u83b7\u53d6\u884c\u653f\u533a\u8be6\u7ec6\u4fe1\u606f",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "districtId",
+                        "in": "path",
+                        "description": "\u884c\u653f\u533aid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u884c\u653f\u533aid\uff0c\u83b7\u53d6\u884c\u653f\u533a\u8be6\u7ec6\u4fe1\u606f",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/placesDistrictInfo"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/places/cities/{cityId}/districts": {
+            "get": {
+                "tags": [
+                    "places"
+                ],
+                "summary": "\u83b7\u53d6\u6307\u5b9a\u57ce\u5e02\u4e0b\u7684\u884c\u653f\u533a\u5217\u8868",
+                "description": "\u6839\u636e\u57ce\u5e02id,\u83b7\u53d6\u5176\u8f96\u4e0b\u7684\u884c\u653f\u533a\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "cityId",
+                        "in": "path",
+                        "description": "\u57ce\u5e02id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u57ce\u5e02id,\u83b7\u53d6\u5176\u8f96\u4e0b\u7684\u884c\u653f\u533a\u5217\u8868",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/placesDistrictsByCity"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/places/provinces/{provinceId}": {
+            "get": {
+                "tags": [
+                    "places"
+                ],
+                "summary": "\u83b7\u53d6\u7701\u4efd\u8be6\u7ec6\u4fe1\u606f",
+                "description": "\u6839\u636e\u7701\u4efdid\uff0c\u83b7\u53d6\u7701\u4efd\u8be6\u7ec6\u4fe1\u606f",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "provinceId",
+                        "in": "path",
+                        "description": "\u7701\u4efdid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u57ce\u5e02id\uff0c\u83b7\u53d6\u57ce\u5e02\u8be6\u7ec6\u4fe1\u606f",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/placesProvinceInfo"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/places/provinces": {
+            "get": {
+                "tags": [
+                    "places"
+                ],
+                "summary": "\u83b7\u53d6\u6240\u6709\u7701\u4efd\u5217\u8868",
+                "description": "\u83b7\u53d6\u6240\u6709\u7701\u4efd\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u83b7\u53d6\u6240\u6709\u7701\u4efd\u5217\u8868",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/placesAllProvinces"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/scate": {
+            "get": {
+                "tags": [
+                    "scate"
+                ],
+                "summary": "\u83b7\u53d6\u6240\u6709\u5546\u5bb6\u5206\u7c7b",
+                "description": "\u83b7\u53d6\u6240\u6709\u5546\u5bb6\u5206\u7c7b",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u7528\u6237\u8d26\u53f7\u5bc6\u7801\u767b\u5f55",
+                        "schema": {
+                            "property": "obj",
+                            "type": "object",
+                            "$ref": "#/definitions/scateListBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/{storeId}": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u6839\u636e\u5546\u5bb6id\u83b7\u53d6\u5546\u5bb6\u4fe1\u606f",
+                "description": "\u6839\u636e\u5546\u5bb6id\u83b7\u53d6\u5546\u5bb6\u4fe1\u606f",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u5546\u5bb6id\u83b7\u53d6\u5546\u5bb6\u4fe1\u606f",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/storeEditInfoBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "put": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u7f16\u8f91\u5546\u5bb6\u4fe1\u606f",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeRealName",
+                        "in": "formData",
+                        "description": "\u5e97\u4e3b\u540d\u5b57",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "storeName",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u540d",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "scateId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u5206\u7c7bid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "idCardSN",
+                        "in": "formData",
+                        "description": "\u8eab\u4efd\u8bc1\u53f7(\u8981\u6c4218\u4f4d\u957f\u5ea6\u7684)",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "storeType",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u7c7b\u578b",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "isKoalac",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u5c5e\u6027",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "tel",
+                        "in": "formData",
+                        "description": "\u5546\u5bb6\u7535\u8bdd",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "regionName",
+                        "in": "formData",
+                        "description": "\u7701\u5e02\u533a\u5b57\u7b26\u4e32\uff0c\u82f1\u6587\u9017\u53f7\u9694\u5f00\uff08\u5e7f\u4e1c\u7701,\u5e7f\u5dde\u5e02,\u5929\u6cb3\u533a\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "province",
+                        "in": "formData",
+                        "description": "\u7701\uff08\u5e7f\u4e1c\u7701\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "city",
+                        "in": "formData",
+                        "description": "\u5e02\uff08\u5e7f\u5dde\u5e02\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "area",
+                        "in": "formData",
+                        "description": "\u533a\uff08\u5929\u6cb3\u533a\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "provinceId",
+                        "in": "formData",
+                        "description": "\u7701id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "cityId",
+                        "in": "formData",
+                        "description": "\u5e02id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "quarterId",
+                        "in": "formData",
+                        "description": "\u533aid",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "address",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u5730\u5740",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "lng",
+                        "in": "formData",
+                        "description": "\u7ecf\u5ea6",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "lat",
+                        "in": "formData",
+                        "description": "\u7ef4\u5ea6",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u5206\u516c\u53f8id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "areaId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u7247\u533aid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "wholesaleMarketId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u6279\u53d1\u5e02\u573aid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "idImages",
+                        "in": "formData",
+                        "description": "\u8eab\u4efd\u8bc1\u56fe\u7247url\uff08\u591a\u5f20\u7528\u82f1\u6587\u9017\u53f7\u9694\u5f00\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u66f4\u65b0\u67d0\u4e2a\u5546\u5bb6\u4fe1\u606f",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}",
+                            "type": "object",
+                            "$ref": "#/definitions/updateStoreBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/{storeId}/verify/passing": {
+            "put": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u5ba1\u6838\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeRealName",
+                        "in": "formData",
+                        "description": "\u5e97\u4e3b\u540d\u5b57",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "storeName",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u540d",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "scateId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u5206\u7c7bid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "idCardSN",
+                        "in": "formData",
+                        "description": "\u8eab\u4efd\u8bc1\u53f7(\u8981\u6c4218\u4f4d\u957f\u5ea6\u7684)",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "storeType",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u7c7b\u578b",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "isKoalac",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u5c5e\u6027",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "tel",
+                        "in": "formData",
+                        "description": "\u5546\u5bb6\u7535\u8bdd",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "regionName",
+                        "in": "formData",
+                        "description": "\u7701\u5e02\u533a\u5b57\u7b26\u4e32\uff0c\u82f1\u6587\u9017\u53f7\u9694\u5f00\uff08\u5e7f\u4e1c\u7701,\u5e7f\u5dde\u5e02,\u5929\u6cb3\u533a\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "province",
+                        "in": "formData",
+                        "description": "\u7701\uff08\u5e7f\u4e1c\u7701\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "city",
+                        "in": "formData",
+                        "description": "\u5e02\uff08\u5e7f\u5dde\u5e02\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "area",
+                        "in": "formData",
+                        "description": "\u533a\uff08\u5929\u6cb3\u533a\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "provinceId",
+                        "in": "formData",
+                        "description": "\u7701id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "cityId",
+                        "in": "formData",
+                        "description": "\u5e02id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "quarterId",
+                        "in": "formData",
+                        "description": "\u533aid",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "address",
+                        "in": "formData",
+                        "description": "\u5e97\u94fa\u5730\u5740",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "lng",
+                        "in": "formData",
+                        "description": "\u7ecf\u5ea6",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "lat",
+                        "in": "formData",
+                        "description": "\u7ef4\u5ea6",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "companyId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u5206\u516c\u53f8id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "areaId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u7247\u533aid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "wholesaleMarketId",
+                        "in": "formData",
+                        "description": "\u6240\u5c5e\u6279\u53d1\u5e02\u573aid",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "idImages",
+                        "in": "formData",
+                        "description": "\u8eab\u4efd\u8bc1\u56fe\u7247url\uff08\u591a\u5f20\u7528\u82f1\u6587\u9017\u53f7\u9694\u5f00\uff09",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u5ba1\u6838\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}/verify/passing",
+                            "type": "object",
+                            "$ref": "#/definitions/verifyPassStoreBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/{storeId}/verify/rejection": {
+            "put": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u5ba1\u6838\u4e0d\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "rejectReason",
+                        "in": "formData",
+                        "description": "\u62d2\u7edd\u539f\u56e0",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u5ba1\u6838\u4e0d\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}/verify/rejection",
+                            "type": "object",
+                            "$ref": "#/definitions/verifyRejectionStoreBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/{storeId}/black": {
+            "post": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u8bbe\u7f6e\u67d0\u4e2a\u5546\u5bb6\u4e3a\u9ed1\u540d\u5355",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u8bbe\u7f6e\u67d0\u4e2a\u5546\u5bb6\u4e3a\u9ed1\u540d\u5355",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}/black",
+                            "type": "object",
+                            "$ref": "#/definitions/setStoreBlackListBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u53d6\u6d88\u67d0\u4e2a\u5546\u5bb6\u9ed1\u540d\u5355",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u53d6\u6d88\u67d0\u4e2a\u5546\u5bb6\u9ed1\u540d\u5355",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}/black",
+                            "type": "object",
+                            "$ref": "#/definitions/cancelStoreBlackListBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/areas": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u83b7\u53d6\u5168\u90e8\u7247\u533a\u5217\u8868",
+                "description": "\u83b7\u53d6\u5168\u90e8\u7247\u533a\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u83b7\u53d6\u5168\u90e8\u7247\u533a\u5217\u8868",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u83b7\u53d6\u5168\u90e8\u7247\u533a\u5217\u8868\n/api/bg1/store/areas",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u83b7\u53d6\u5168\u90e8\u7247\u533a\u5217\u8868\n/api/bg1/store/areas",
+                                            "type": "object",
+                                            "$ref": ""
+                                        },
+                                        "list": {
+                                            "description": "\u83b7\u53d6\u5168\u90e8\u7247\u533a\u5217\u8868\n/api/bg1/store/areas",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/storeAreasList"
+                                            }
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/black/count": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u6570\u91cf",
+                "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u6570\u91cf",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u6570\u91cf",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/black/count",
+                            "type": "object",
+                            "$ref": "#/definitions/storeBlackCountBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/black": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u5217\u8868",
+                "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "\u5217\u8868\u504f\u79fb\u91cf",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "\u5217\u8868\u5bb9\u91cf",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u5546\u5bb6id\u83b7\u53d6\u5546\u5bb6\u4fe1\u606f",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/storeBlackInfoBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/{storeId}/closing": {
+            "put": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u5173\u95ed\u5e97\u94fa",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u5173\u95ed\u5e97\u94fa",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}/closing",
+                            "type": "object",
+                            "$ref": "#/definitions/storeCloseBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/{storeId}/opening": {
+            "put": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u5f00\u901a\u5e97\u94fa",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u5e97\u5f00\u901a\u94fa",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}/opening",
+                            "type": "object",
+                            "$ref": "#/definitions/storeOpenBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/{storeId}/covering/city": {
+            "put": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u66f4\u65b0\u5e97\u94fa\u8986\u76d6\u57ce\u5e02",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "cityId",
+                        "in": "formData",
+                        "description": "\u57ce\u5e02id\u6570\u7ec4",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u66f4\u65b0\u5e97\u94fa\u8986\u76d6\u57ce\u5e02",
+                        "schema": {
+                            "property": "obj",
+                            "description": "/api/bg1/store/{storeId}/covering/city",
+                            "type": "object",
+                            "$ref": "#/definitions/updateCoverCityBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/searcher": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22",
+                "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868)",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u72b6\u6001\uff080\u5f85\u5ba1\u6838\uff0c1\u5ba1\u6838\u901a\u8fc7\uff0c2\u5df2\u5173\u95ed\uff0c3\u6ce8\u518c\u6210\u529f\u4f46\u672a\u63d0\u4ea4\u5e97\u94fa\u8d44\u6599\uff0c4\u5ba1\u6838\u4e0d\u901a\u8fc7\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c\uff09",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeName",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u540d\u79f0",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "tel",
+                        "in": "query",
+                        "description": "\u5546\u5bb6\u7535\u8bdd",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "verifyUser",
+                        "in": "query",
+                        "description": "\u5ba1\u6838\u4eba(\u540d\u5b57\u5b57\u7b26\u4e32)",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "storeOwner",
+                        "in": "query",
+                        "description": "\u5e97\u4e3b\u540d\u79f0",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "isKoalac",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u5c5e\u6027(0:\u666e\u901a \u30011:\u8003\u62c9\u5458\u5de5\u30012:\u4ee3\u7406\u5546\u30013:\u5408\u4f19\u4eba)\uff0c\u5982\u679c\u662f\u5168\u90e8\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeType",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u7c7b\u578b(1:\u4e2a\u4eba\u5e97\u94fa\u30012:\u5468\u8fb9\u7cbe\u9009\u30013:\u666e\u901a\u5e97\u94fa\u30014:B\u5e97\u6211\u8981\u8fdb\u8d27\u30015:B\u5e97\u975e\u6211\u8981\u8fdb\u8d27)\uff0c\u5982\u679c\u662f\u5168\u90e8\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "black",
+                        "in": "query",
+                        "description": "\u662f\u5426\u9ed1\u540d\u5355(0\u5426\uff0c1\u662f)\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "idcard",
+                        "in": "query",
+                        "description": "\u8eab\u4efd\u8bc1\u53f7\u7801",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "provinceId",
+                        "in": "query",
+                        "description": "\u7701\u4efdID\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "cityId",
+                        "in": "query",
+                        "description": "\u57ce\u5e02ID\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "recommendInfo",
+                        "in": "query",
+                        "description": "\u63a8\u8350\u4eba",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "timeType",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u7c7b\u578b(1\uff1a\u6ce8\u518c\uff0c2\uff1a\u5ba1\u6838\uff0c3\uff1a\u590d\u6838)\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "timeStart",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:(\u6ce8\u518c/\u5ba1\u6838/\u590d\u6838)\u5f00\u59cb\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "timeEnd",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:(\u6ce8\u518c/\u5ba1\u6838/\u590d\u6838)\u7ed3\u675f\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "\u5217\u8868\u504f\u79fb\u91cf",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "\u5217\u8868\u5bb9\u91cf",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u9ad8\u7ea7\u641c\u7d22\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868)",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\uff09\n/api/bg1/store/searcher",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\uff09\n/api/bg1/store/searcher",
+                                            "type": "object",
+                                            "$ref": ""
+                                        },
+                                        "list": {
+                                            "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\uff09\n/api/bg1/store/searcher",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/storeSearcherList"
+                                            }
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/searcher/count": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\u7684\u7ed3\u679c\u5217\u8868\u6570\u91cf",
+                "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\u7684\u7ed3\u679c\u5217\u8868\u6570\u91cf\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\u6570\u91cf)",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u72b6\u6001\uff080\u5f85\u5ba1\u6838\uff0c1\u5ba1\u6838\u901a\u8fc7\uff0c2\u5df2\u5173\u95ed\uff0c3\u6ce8\u518c\u6210\u529f\u4f46\u672a\u63d0\u4ea4\u5e97\u94fa\u8d44\u6599\uff0c4\u5ba1\u6838\u4e0d\u901a\u8fc7\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c\uff09",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeName",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u540d\u79f0",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "tel",
+                        "in": "query",
+                        "description": "\u5546\u5bb6\u7535\u8bdd",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "verifyUser",
+                        "in": "query",
+                        "description": "\u5ba1\u6838\u4eba(\u540d\u5b57\u5b57\u7b26\u4e32)",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "storeOwner",
+                        "in": "query",
+                        "description": "\u5e97\u4e3b\u540d\u79f0",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "isKoalac",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u5c5e\u6027(0:\u666e\u901a \u30011:\u8003\u62c9\u5458\u5de5\u30012:\u4ee3\u7406\u5546\u30013:\u5408\u4f19\u4eba)\uff0c\u5982\u679c\u662f\u5168\u90e8\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeType",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u7c7b\u578b(1:\u4e2a\u4eba\u5e97\u94fa\u30012:\u5468\u8fb9\u7cbe\u9009\u30013:\u666e\u901a\u5e97\u94fa\u30014:B\u5e97\u6211\u8981\u8fdb\u8d27\u30015:B\u5e97\u975e\u6211\u8981\u8fdb\u8d27)\uff0c\u5982\u679c\u662f\u5168\u90e8\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "black",
+                        "in": "query",
+                        "description": "\u662f\u5426\u9ed1\u540d\u5355(0\u5426\uff0c1\u662f)\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "idcard",
+                        "in": "query",
+                        "description": "\u8eab\u4efd\u8bc1\u53f7\u7801",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "provinceId",
+                        "in": "query",
+                        "description": "\u7701\u4efdID\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "cityId",
+                        "in": "query",
+                        "description": "\u57ce\u5e02ID\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "recommendInfo",
+                        "in": "query",
+                        "description": "\u63a8\u8350\u4eba",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "timeType",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u7c7b\u578b(1\uff1a\u6ce8\u518c\uff0c2\uff1a\u5ba1\u6838\uff0c3\uff1a\u590d\u6838)\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "timeStart",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:(\u6ce8\u518c/\u5ba1\u6838/\u590d\u6838)\u5f00\u59cb\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "timeEnd",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:(\u6ce8\u518c/\u5ba1\u6838/\u590d\u6838)\u7ed3\u675f\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\u7684\u7ed3\u679c\u5217\u8868\u6570\u91cf\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\u6570\u91cf)",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\u7684\u7ed3\u679c\u5217\u8868\u6570\u91cf\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\u6570\u91cf)\n/api/bg1/store/searcher/count",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\u7684\u7ed3\u679c\u5217\u8868\u6570\u91cf\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\u6570\u91cf)\n/api/bg1/store/searcher/count",
+                                            "type": "object",
+                                            "$ref": "#/definitions/storeSearcherCount"
+                                        },
+                                        "list": {
+                                            "description": "\u5546\u5bb6\u9ad8\u7ea7\u641c\u7d22\u7684\u7ed3\u679c\u5217\u8868\u6570\u91cf\uff08\u8fd4\u56de\u5546\u5bb6\u5217\u8868\u6570\u91cf)\n/api/bg1/store/searcher/count",
+                                            "type": "array",
+                                            "items": ""
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/searcher/export": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u6839\u636e\u6761\u4ef6\u5bfc\u51fa\u5546\u94fa\u6570\u636e",
+                "description": "\u6839\u636e\u6761\u4ef6\u5bfc\u51fa\u5546\u94fa\u6570\u636e\uff08\u8fd4\u56decsv\u6587\u4ef6\u7684\u8def\u5f84)",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "state",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u72b6\u6001\uff080\u5f85\u5ba1\u6838\uff0c1\u5ba1\u6838\u901a\u8fc7\uff0c2\u5df2\u5173\u95ed\uff0c3\u6ce8\u518c\u6210\u529f\u4f46\u672a\u63d0\u4ea4\u5e97\u94fa\u8d44\u6599\uff0c4\u5ba1\u6838\u4e0d\u901a\u8fc7\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c\uff09",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeName",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u540d\u79f0",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "tel",
+                        "in": "query",
+                        "description": "\u5546\u5bb6\u7535\u8bdd",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "verifyUser",
+                        "in": "query",
+                        "description": "\u5ba1\u6838\u4eba(\u540d\u5b57\u5b57\u7b26\u4e32)",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "storeOwner",
+                        "in": "query",
+                        "description": "\u5e97\u4e3b\u540d\u79f0",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "isKoalac",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u5c5e\u6027(0:\u666e\u901a \u30011:\u8003\u62c9\u5458\u5de5\u30012:\u4ee3\u7406\u5546\u30013:\u5408\u4f19\u4eba)\uff0c\u5982\u679c\u662f\u5168\u90e8\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "storeType",
+                        "in": "query",
+                        "description": "\u5e97\u94fa\u7c7b\u578b(1:\u4e2a\u4eba\u5e97\u94fa\u30012:\u5468\u8fb9\u7cbe\u9009\u30013:\u666e\u901a\u5e97\u94fa\u30014:B\u5e97\u6211\u8981\u8fdb\u8d27\u30015:B\u5e97\u975e\u6211\u8981\u8fdb\u8d27)\uff0c\u5982\u679c\u662f\u5168\u90e8\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "black",
+                        "in": "query",
+                        "description": "\u662f\u5426\u9ed1\u540d\u5355(0\u5426\uff0c1\u662f)\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "idcard",
+                        "in": "query",
+                        "description": "\u8eab\u4efd\u8bc1\u53f7\u7801",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "provinceId",
+                        "in": "query",
+                        "description": "\u7701\u4efdID\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "cityId",
+                        "in": "query",
+                        "description": "\u57ce\u5e02ID\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "recommendInfo",
+                        "in": "query",
+                        "description": "\u63a8\u8350\u4eba",
+                        "required": false,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "timeType",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u7c7b\u578b(1\uff1a\u6ce8\u518c\uff0c2\uff1a\u5ba1\u6838\uff0c3\uff1a\u590d\u6838)\uff0c\u5982\u679c\u4e0d\u9650\u5219\u4e3a\u7a7a\u503c",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "timeStart",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:(\u6ce8\u518c/\u5ba1\u6838/\u590d\u6838)\u5f00\u59cb\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "timeEnd",
+                        "in": "query",
+                        "description": "\u65f6\u95f4\u8303\u56f4:(\u6ce8\u518c/\u5ba1\u6838/\u590d\u6838)\u7ed3\u675f\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u6761\u4ef6\u5bfc\u51fa\u5546\u94fa\u6570\u636e",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u6839\u636e\u6761\u4ef6\u5bfc\u51fa\u5546\u94fa\u6570\u636e\n/api/bg1/store/searcher/export",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u6839\u636e\u6761\u4ef6\u5bfc\u51fa\u5546\u94fa\u6570\u636e\n/api/bg1/store/searcher/export",
+                                            "type": "object",
+                                            "$ref": "#/definitions/storeSearcherUrl"
+                                        },
+                                        "list": {
+                                            "description": "\u6839\u636e\u6761\u4ef6\u5bfc\u51fa\u5546\u94fa\u6570\u636e\n/api/bg1/store/searcher/export",
+                                            "type": "array",
+                                            "items": ""
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/store/searcher/{storeId}": {
+            "get": {
+                "tags": [
+                    "store"
+                ],
+                "summary": "\u8bfb\u53d6\u4e00\u6761\u5546\u5bb6\u6570\u636e\u5217\u8868",
+                "description": "\u901a\u8fc7\u5546\u5bb6id\u8bfb\u53d6\u4e00\u6761\u5546\u5bb6\u6570\u636e\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "storeId",
+                        "in": "path",
+                        "description": "\u5546\u5bb6id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u901a\u8fc7\u5546\u5bb6id\u8bfb\u53d6\u4e00\u6761\u5546\u5bb6\u6570\u636e\u5217\u8868",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u901a\u8fc7\u5546\u5bb6id\u8bfb\u53d6\u4e00\u6761\u5546\u5bb6\u6570\u636e\u5217\u8868\n/api/bg1/store/searcher/[i:storeId]",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u901a\u8fc7\u5546\u5bb6id\u8bfb\u53d6\u4e00\u6761\u5546\u5bb6\u6570\u636e\u5217\u8868\n/api/bg1/store/searcher/[i:storeId]",
+                                            "type": "object",
+                                            "$ref": ""
+                                        },
+                                        "list": {
+                                            "description": "\u901a\u8fc7\u5546\u5bb6id\u8bfb\u53d6\u4e00\u6761\u5546\u5bb6\u6570\u636e\u5217\u8868\n/api/bg1/store/searcher/[i:storeId]",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/storeSearcherList"
+                                            }
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/uploadfiles/upyun": {
+            "post": {
+                "tags": [
+                    "uploadfiles"
+                ],
+                "summary": "\u4e0a\u4f20\u6587\u4ef6",
+                "description": "\u4e0a\u4f20\u6587\u4ef6,\u53ea\u652f\u6301\u4e00\u4e2a\u6587\u4ef6",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "files",
+                        "in": "formData",
+                        "description": "\u4e0a\u4f20\u7684\u6587\u4ef6\u6570\u7ec4,files\u53ef\u4ee5\u4efb\u610f\u540d\u79f0\uff0c\u6216\u8005\u4e0d\u547d\u540d\u7531\u7cfb\u7edf\u51b3\u5b9a",
+                        "required": true,
+                        "type": "string",
+                        "format": "file"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u4e0a\u4f20\u6587\u4ef6,\u53ea\u652f\u6301\u4e00\u4e2a\u6587\u4ef6",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u4e0a\u4f20\u6587\u4ef6(\u53ea\u652f\u6301\u4e00\u4e2a\u6587\u4ef6)\n/api/bg1/uploadfiles/upyun",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u4e0a\u4f20\u6587\u4ef6(\u53ea\u652f\u6301\u4e00\u4e2a\u6587\u4ef6)\n/api/bg1/uploadfiles/upyun",
+                                            "type": "object",
+                                            "$ref": "#/definitions/uploadfileFileInfoItem"
+                                        },
+                                        "list": {
+                                            "description": "\u4e0a\u4f20\u6587\u4ef6(\u53ea\u652f\u6301\u4e00\u4e2a\u6587\u4ef6)\n/api/bg1/uploadfiles/upyun",
+                                            "type": "array",
+                                            "items": ""
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/user/{uid}": {
+            "get": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "\u6839\u636e\u7528\u6237id\u83b7\u53d6\u7528\u6237\u4fe1\u606f",
+                "description": "\u6839\u636e\u7528\u6237id\u83b7\u53d6\u7528\u6237\u4fe1\u606f",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "uid",
+                        "in": "path",
+                        "description": "\u7528\u6237id",
+                        "required": true,
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u6839\u636e\u7528\u6237id\u83b7\u53d6\u7528\u6237\u4fe1\u606f",
+                        "schema": {
+                            "property": "obj",
+                            "type": "object",
+                            "$ref": "#/definitions/userMemberBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/user/login": {
+            "put": {
+                "tags": [
+                    "user"
+                ],
+                "summary": "\u7ba1\u7406\u5458\u767b\u5f55",
+                "description": "\u7ba1\u7406\u5458\u767b\u5f55",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "formData",
+                        "description": "\u7528\u6237\u540d",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    },
+                    {
+                        "name": "password",
+                        "in": "formData",
+                        "description": "\u767b\u5f55\u5bc6\u7801",
+                        "required": true,
+                        "type": "string",
+                        "format": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u7528\u6237\u8d26\u53f7\u5bc6\u7801\u767b\u5f55",
+                        "schema": {
+                            "property": "obj",
+                            "type": "object",
+                            "$ref": "#/definitions/userLoginBg1"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "type": "object",
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        },
+        "/api/bg1/wholesalemarket": {
+            "get": {
+                "tags": [
+                    "wholesalemarket"
+                ],
+                "summary": "\u83b7\u53d6\u5168\u90e8\u7684\u6279\u53d1\u5e02\u573a\u5217\u8868",
+                "description": "\u83b7\u53d6\u5168\u90e8\u7684\u6279\u53d1\u5e02\u573a\u5217\u8868",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "\u83b7\u53d6\u5168\u90e8\u7684\u6279\u53d1\u5e02\u573a\u5217\u8868",
+                        "schema": {
+                            "properties": {
+                                "data": {
+                                    "description": "\u83b7\u53d6\u5168\u90e8\u7684\u6279\u53d1\u5e02\u573a\u5217\u8868\n/api/bg1/wholesalemarket",
+                                    "properties": {
+                                        "obj": {
+                                            "description": "\u83b7\u53d6\u5168\u90e8\u7684\u6279\u53d1\u5e02\u573a\u5217\u8868\n/api/bg1/wholesalemarket",
+                                            "type": "object",
+                                            "$ref": ""
+                                        },
+                                        "list": {
+                                            "description": "\u83b7\u53d6\u5168\u90e8\u7684\u6279\u53d1\u5e02\u573a\u5217\u8868\n/api/bg1/wholesalemarket",
+                                            "type": "array",
+                                            "items": {
+                                                "$ref": "#/definitions/wholesaleMarketList"
+                                            }
+                                        }
+                                    }
+                                },
+                                "msg": {
+                                    "description": "\u63d0\u793a\u4fe1\u606f",
+                                    "type": "string"
+                                },
+                                "error": {
+                                    "description": "\u9519\u8bef\u7801",
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    },
+                    "default": {
+                        "description": "unexpected error",
+                        "schema": {
+                            "$ref": "#/definitions/Error"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "errorModel": {
+            "required": [
+                "code",
+                "message"
+            ],
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        },
+        "successModel": {
+            "required": [
+                "code",
+                "message"
+            ],
+            "properties": {
+                "code": {
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "message": {
+                    "type": "string"
+                }
+            }
+        },
+        "Error": {
+            "required": [
+                "error",
+                "msg"
+            ],
+            "properties": {
+                "data": {
+                    "description": "\u9519\u8bef\u7f16\u7801(\u5171\u7528)",
+                    "properties": {
+                        "obj": {
+                            "description": "\u9519\u8bef\u7f16\u7801(\u5171\u7528)",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u9519\u8bef\u7f16\u7801(\u5171\u7528)",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "message": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string",
+                    "format": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7f16\u7801",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "defaultListCount": {
+            "properties": {
+                "count": {
+                    "description": "\u5217\u8868\u957f\u5ea6",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "companySubList": {
+            "properties": {
+                "companyId": {
+                    "description": "\u516c\u53f8id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "companyName": {
+                    "description": "\u516c\u53f8\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "oplogDetailInfo": {
+            "properties": {
+                "data": {
+                    "description": "\u64cd\u4f5c\u65e5\u5fd7\u8be6\u7ec6\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u64cd\u4f5c\u65e5\u5fd7\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": "#/definitions/oplogDetailItem"
+                        },
+                        "list": {
+                            "description": "\u64cd\u4f5c\u65e5\u5fd7\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "oplogDetailItem": {
+            "properties": {
+                "logId": {
+                    "description": "\u64cd\u4f5c\u65e5\u5fd7id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "logTime": {
+                    "description": "\u64cd\u4f5c\u65e5\u5fd7\u65f6\u95f4(\u65f6\u95f4\u6233\u683c\u5f0f)",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "logContent": {
+                    "description": "\u64cd\u4f5c\u65e5\u5fd7\u5185\u5bb9(JSON\u5b57\u7b26\u4e32,\u7ea6\u5b9a\u683c\u5f0f)",
+                    "type": "string",
+                    "format": "string"
+                },
+                "opType": {
+                    "description": "\u64cd\u4f5c\u7c7b\u578b",
+                    "type": "object",
+                    "$ref": "#/definitions/opTypeItem"
+                },
+                "opUser": {
+                    "description": "\u64cd\u4f5c\u4eba",
+                    "type": "object",
+                    "$ref": "#/definitions/opUserItem"
+                },
+                "store": {
+                    "description": "\u5546\u94fa",
+                    "type": "object",
+                    "$ref": "#/definitions/opStoreItem"
+                }
+            }
+        },
+        "oplogSearcherList": {
+            "properties": {
+                "logId": {
+                    "description": "\u64cd\u4f5c\u65e5\u5fd7id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "logTime": {
+                    "description": "\u64cd\u4f5c\u65e5\u5fd7\u65f6\u95f4(\u65f6\u95f4\u6233)",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "opType": {
+                    "description": "\u64cd\u4f5c\u7c7b\u578b",
+                    "type": "object",
+                    "$ref": "#/definitions/opTypeItem"
+                },
+                "opUser": {
+                    "description": "\u64cd\u4f5c\u4eba",
+                    "type": "object",
+                    "$ref": "#/definitions/opUserItem"
+                },
+                "store": {
+                    "description": "\u5546\u94fa",
+                    "type": "object",
+                    "$ref": "#/definitions/opStoreItem"
+                }
+            }
+        },
+        "opTypeItem": {
+            "properties": {
+                "id": {
+                    "description": "\u64cd\u4f5c\u7c7b\u578b\u6807\u8bc6",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "\u64cd\u4f5c\u7c7b\u578b\uff081:\u5ba1\u6838\u901a\u8fc7\uff0c2:\u5ba1\u6838\u4e0d\u901a\u8fc7\uff0c3:\u7f16\u8f91\uff0c4:\u6dfb\u52a0\u9ed1\u540d\u5355\uff0c5:\u53d6\u6d88\u9ed1\u540d\u5355,6:\u5173\u95ed\u5e97\u94fa,7:\u91cd\u65b0\u5f00\u901a\u5e97\u94fa)",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "opUserItem": {
+            "properties": {
+                "uid": {
+                    "description": "\u64cd\u4f5c\u4ebauid",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "username": {
+                    "description": "\u64cd\u4f5c\u4eba\u7528\u6237\u540d",
+                    "type": "string",
+                    "format": "string"
+                },
+                "realname": {
+                    "description": "\u64cd\u4f5c\u4eba\u771f\u5b9e\u59d3\u540d",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "opStoreItem": {
+            "properties": {
+                "id": {
+                    "description": "\u5546\u94faid(\u64cd\u4f5c\u5bf9\u8c61\u5173\u8054id)",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "\u5546\u94fa\u540d\u5b57",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "operationLogCount": {
+            "properties": {
+                "count": {
+                    "description": "\u64cd\u4f5c\u65e5\u5fd7\u5217\u8868\u7684\u6570\u91cf",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "placesCitiesByProvince": {
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u57ce\u5e02\u5217\u8868\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u57ce\u5e02\u5217\u8868\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": ""
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u57ce\u5e02\u5217\u8868\u4fe1\u606f",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/placesCityItem"
+                            }
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "placesCityItem": {
+            "properties": {
+                "cityId": {
+                    "description": "\u57ce\u5e02id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "cityName": {
+                    "description": "\u57ce\u5e02\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                },
+                "province": {
+                    "description": "\u57ce\u5e02\u4fe1\u606f\u7684\u6570\u636e\u9879",
+                    "type": "object",
+                    "$ref": "#/definitions/placesProvinceOnCityItem"
+                }
+            }
+        },
+        "placesProvinceOnCityItem": {
+            "properties": {
+                "id": {
+                    "description": "\u7701\u4efdid",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "\u7701\u4efd\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "placesCityInfo": {
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u57ce\u5e02\u8be6\u7ec6\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u57ce\u5e02\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": "#/definitions/placesCityItem"
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u57ce\u5e02\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "placesDistrictInfo": {
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u884c\u653f\u533a\u8be6\u7ec6\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u884c\u653f\u533a\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": "#/definitions/placesDistrictItem"
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u884c\u653f\u533a\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "placesDistrictsByCity": {
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u884c\u653f\u533a\u5217\u8868\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u884c\u653f\u533a\u5217\u8868\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": ""
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u884c\u653f\u533a\u5217\u8868\u4fe1\u606f",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/placesDistrictItem"
+                            }
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "placesDistrictItem": {
+            "properties": {
+                "districtId": {
+                    "description": "\u884c\u653f\u533aid",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "districtName": {
+                    "description": "\u884c\u653f\u533a\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                },
+                "city": {
+                    "description": "\u884c\u653f\u533a\u4fe1\u606f\u7684\u6570\u636e\u9879",
+                    "type": "object",
+                    "$ref": "#/definitions/placesCityOnDistrictItem"
+                }
+            }
+        },
+        "placesCityOnDistrictItem": {
+            "properties": {
+                "id": {
+                    "description": "\u57ce\u5e02id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "\u57ce\u5e02\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "placesProvinceInfo": {
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u7701\u4efd\u8be6\u7ec6\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u7701\u4efd\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": "#/definitions/placesProvinceItem"
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u7701\u4efd\u8be6\u7ec6\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "placesAllProvinces": {
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u7701\u4efd\u5217\u8868\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u7701\u4efd\u5217\u8868\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": ""
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u7701\u4efd\u5217\u8868\u4fe1\u606f",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/placesProvinceItem"
+                            }
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "placesProvinceItem": {
+            "properties": {
+                "provinceId": {
+                    "description": "\u7701\u4efdid",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "provinceName": {
+                    "description": "\u7701\u4efd\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "scateListBg1": {
+            "description": "\u83b7\u53d6\u6240\u6709\u5546\u5bb6\u5206\u7c7b",
+            "properties": {
+                "data": {
+                    "description": "\u83b7\u53d6\u6240\u6709\u5546\u5bb6\u5206\u7c7b",
+                    "properties": {
+                        "obj": {
+                            "description": "\u83b7\u53d6\u6240\u6709\u5546\u5bb6\u5206\u7c7b",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u83b7\u53d6\u6240\u6709\u5546\u5bb6\u5206\u7c7b",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/scateListItemBg1"
+                            }
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "scateListItemBg1": {
+            "properties": {
+                "scateId": {
+                    "description": "\u5546\u5bb6\u5206\u7c7bid",
+                    "type": "string",
+                    "format": "string"
+                },
+                "scateName": {
+                    "description": "\u5546\u5bb6\u5206\u7c7b\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                },
+                "scateImage": {
+                    "description": "\u5546\u5bb6\u5206\u7c7b\u56fe\u7247",
+                    "type": "string",
+                    "format": "string"
+                },
+                "ifShow": {
+                    "description": "\u8be5\u5206\u7c7b\u662f\u5426\u663e\u793a\uff080\u4e0d\u663e\u793a\uff0c1\u663e\u793a\uff09",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "storeEditInfoBg1": {
+            "properties": {
+                "data": {
+                    "description": "\u6839\u636e\u5546\u5bb6id\u83b7\u53d6\u5546\u5bb6\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u6839\u636e\u5546\u5bb6id\u83b7\u53d6\u5546\u5bb6\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": "#/definitions/storeEditInfoItemBg1"
+                        },
+                        "list": {
+                            "description": "\u6839\u636e\u5546\u5bb6id\u83b7\u53d6\u5546\u5bb6\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeEditInfoItemBg1": {
+            "properties": {
+                "storeId": {
+                    "description": "\u5546\u5bb6id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "storeRealname": {
+                    "description": "\u5e97\u4e3b\u540d\u5b57",
+                    "type": "string",
+                    "format": "string"
+                },
+                "storeName": {
+                    "description": "\u5e97\u94fa\u540d",
+                    "type": "string",
+                    "format": "string"
+                },
+                "idcardSN": {
+                    "description": "\u8eab\u4efd\u8bc1\u53f7",
+                    "type": "string",
+                    "format": "string"
+                },
+                "storeType": {
+                    "description": "\u5e97\u94fa\u7c7b\u578b",
+                    "type": "string",
+                    "format": "string"
+                },
+                "isKoalac": {
+                    "description": "\u5e97\u94fa\u5c5e\u6027",
+                    "type": "string",
+                    "format": "string"
+                },
+                "tel": {
+                    "description": "\u5546\u5bb6\u7535\u8bdd",
+                    "type": "string",
+                    "format": "string"
+                },
+                "regionName": {
+                    "description": "\u7701\u5e02\u533a\u5b57\u7b26\u4e32\uff0c\u82f1\u6587\u9017\u53f7\u9694\u5f00\uff08\u5e7f\u4e1c\u7701,\u5e7f\u5dde\u5e02,\u5929\u6cb3\u533a\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "province": {
+                    "description": "\u7701\uff08\u5e7f\u4e1c\u7701\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "city": {
+                    "description": "\u5e02\uff08\u5e7f\u5dde\u5e02\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "area": {
+                    "description": "\u533a\uff08\u5929\u6cb3\u533a\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "provinceId": {
+                    "description": "\u7701id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "cityId": {
+                    "description": "\u5e02id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "quarterId": {
+                    "description": "\u533aid",
+                    "type": "string",
+                    "format": "string"
+                },
+                "address": {
+                    "description": "\u5e97\u94fa\u5730\u5740",
+                    "type": "string",
+                    "format": "string"
+                },
+                "lng": {
+                    "description": "\u7ecf\u5ea6",
+                    "type": "string",
+                    "format": "string"
+                },
+                "lat": {
+                    "description": "\u7ef4\u5ea6",
+                    "type": "string",
+                    "format": "string"
+                },
+                "companyId": {
+                    "description": "\u6240\u5c5e\u5206\u516c\u53f8id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "areaId": {
+                    "description": "\u6240\u5c5e\u7247\u533aid",
+                    "type": "string",
+                    "format": "string"
+                },
+                "wholesaleMarketId": {
+                    "description": "\u6240\u5c5e\u6279\u53d1\u5e02\u573aid",
+                    "type": "string",
+                    "format": "string"
+                },
+                "rejectReason": {
+                    "description": "\u62d2\u7edd\u5ba1\u6838\u901a\u8fc7\u7406\u7531",
+                    "type": "string",
+                    "format": "string"
+                },
+                "idImages": {
+                    "description": "\u8eab\u4efd\u8bc1\u56fe\u7247url\uff08\u591a\u5f20\u7528\u82f1\u6587\u9017\u53f7\u9694\u5f00\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "fromWhere": {
+                    "description": "\u5e97\u94fa\u6ce8\u518c\u6e20\u9053\uff081APP\uff0c2WEB\uff0c3\u516c\u4f17\u53f7\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "recommendInfo": {
+                    "description": "\u63a8\u8350\u4eba\u4fe1\u606f",
+                    "type": "string",
+                    "format": "string"
+                },
+                "addTime": {
+                    "description": "\u6ce8\u518c\u65f6\u95f4",
+                    "type": "string",
+                    "format": "string"
+                },
+                "employeeNumber": {
+                    "description": "\u5458\u5de5\u53f7",
+                    "type": "string",
+                    "format": "string"
+                },
+                "storeCategoryId": {
+                    "description": "\u5e97\u94fa\u6240\u5c5e\u94fa\u5206\u7c7bid",
+                    "type": "string",
+                    "format": "string"
+                },
+                "coverCity": {
+                    "description": "\u540e\u53f0\u5546\u5bb6\u7f16\u8f91\u4fe1\u606f\u9879",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/coverCityItemBg1"
+                    }
+                }
+            }
+        },
+        "coverCityItemBg1": {
+            "properties": {
+                "storeId": {
+                    "description": "\u5546\u5bb6id",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "cityId": {
+                    "description": "\u57ce\u5e02id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "cityName": {
+                    "description": "\u57ce\u5e02\u540d",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "updateStoreBg1": {
+            "description": "\u66f4\u65b0\u67d0\u4e2a\u5546\u673a\u4fe1\u606f",
+            "properties": {
+                "data": {
+                    "description": "\u66f4\u65b0\u67d0\u4e2a\u5546\u5bb6\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u66f4\u65b0\u67d0\u4e2a\u5546\u5bb6\u4fe1\u606f",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u66f4\u65b0\u67d0\u4e2a\u5546\u5bb6\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "verifyPassStoreBg1": {
+            "description": "\u5ba1\u6838\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+            "properties": {
+                "data": {
+                    "description": "\u5ba1\u6838\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                    "properties": {
+                        "obj": {
+                            "description": "\u5ba1\u6838\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u5ba1\u6838\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "verifyRejectionStoreBg1": {
+            "description": "\u5ba1\u6838\u4e0d\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6\u63a5\u53e3",
+            "properties": {
+                "data": {
+                    "description": "\u5ba1\u6838\u4e0d\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                    "properties": {
+                        "obj": {
+                            "description": "\u5ba1\u6838\u4e0d\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u5ba1\u6838\u4e0d\u901a\u8fc7\u67d0\u4e2a\u5546\u5bb6",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "cancelStoreBlackListBg1": {
+            "description": "\u8bbe\u7f6e\u67d0\u4e2a\u5546\u5bb6\u4e3a\u9ed1\u540d\u5355",
+            "properties": {
+                "data": {
+                    "description": "\u53d6\u6d88\u67d0\u4e2a\u5546\u5bb6\u9ed1\u540d\u5355",
+                    "properties": {
+                        "obj": {
+                            "description": "\u53d6\u6d88\u67d0\u4e2a\u5546\u5bb6\u9ed1\u540d\u5355",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u53d6\u6d88\u67d0\u4e2a\u5546\u5bb6\u9ed1\u540d\u5355",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeAreasList": {
+            "properties": {
+                "areaId": {
+                    "description": "\u7247\u533aid",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "areaName": {
+                    "description": "\u7247\u533a\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "storeBlackCountBg1": {
+            "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u6570\u91cf",
+            "properties": {
+                "data": {
+                    "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u6570\u91cf",
+                    "properties": {
+                        "obj": {
+                            "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u6570\u91cf",
+                            "type": "object",
+                            "$ref": "#/definitions/defaultListCount"
+                        },
+                        "list": {
+                            "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u6570\u91cf",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeBlackInfoBg1": {
+            "properties": {
+                "data": {
+                    "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u5217\u8868",
+                    "properties": {
+                        "obj": {
+                            "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u5217\u8868",
+                            "type": "object",
+                            "$ref": ""
+                        },
+                        "list": {
+                            "description": "\u83b7\u53d6\u5546\u5bb6\u9ed1\u540d\u5355\u5217\u8868",
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/storeBlackInfoItemBg1"
+                            }
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeBlackInfoItemBg1": {
+            "properties": {
+                "storeId": {
+                    "description": "\u5546\u5bb6id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "storeName": {
+                    "description": "\u5e97\u94fa\u540d",
+                    "type": "string",
+                    "format": "string"
+                },
+                "operationUserId": {
+                    "description": "\u64cd\u4f5c\u4eba\u7528\u6237id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "operationUserName": {
+                    "description": "\u64cd\u4f5c\u4eba\u7528\u6237\u540d",
+                    "type": "string",
+                    "format": "string"
+                },
+                "operationTime": {
+                    "description": "\u64cd\u4f5c\u65f6\u95f4",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "setStoreBlackListBg1": {
+            "description": "\u8bbe\u7f6e\u67d0\u4e2a\u5546\u5bb6\u4e3a\u9ed1\u540d\u5355",
+            "properties": {
+                "data": {
+                    "description": "\u8bbe\u7f6e\u67d0\u4e2a\u5546\u5bb6\u4e3a\u9ed1\u540d\u5355",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8bbe\u7f6e\u67d0\u4e2a\u5546\u5bb6\u4e3a\u9ed1\u540d\u5355",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u8bbe\u7f6e\u67d0\u4e2a\u5546\u5bb6\u4e3a\u9ed1\u540d\u5355",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeCloseBg1": {
+            "description": "\u5173\u95ed\u5e97\u94fa",
+            "properties": {
+                "data": {
+                    "description": "\u5173\u95ed\u5e97\u94fa",
+                    "properties": {
+                        "obj": {
+                            "description": "\u5173\u95ed\u5e97\u94fa",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u5173\u95ed\u5e97\u94fa",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeOpenBg1": {
+            "description": "\u5f00\u901a\u5e97\u94fa",
+            "properties": {
+                "data": {
+                    "description": "\u5f00\u901a\u5e97\u94fa",
+                    "properties": {
+                        "obj": {
+                            "description": "\u5f00\u901a\u5e97\u94fa",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u5f00\u901a\u5e97\u94fa",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "updateCoverCityBg1": {
+            "description": "\u66f4\u65b0\u5e97\u94fa\u8986\u76d6\u57ce\u5e02",
+            "properties": {
+                "data": {
+                    "description": "\u66f4\u65b0\u5e97\u94fa\u8986\u76d6\u57ce\u5e02",
+                    "properties": {
+                        "obj": {
+                            "description": "\u66f4\u65b0\u5e97\u94fa\u8986\u76d6\u57ce\u5e02",
+                            "type": "object"
+                        },
+                        "list": {
+                            "description": "\u66f4\u65b0\u5e97\u94fa\u8986\u76d6\u57ce\u5e02",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeSearcherList": {
+            "properties": {
+                "storeId": {
+                    "description": "\u5e97\u94faid",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "storeName": {
+                    "description": "\u5e97\u94fa\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                },
+                "regionName": {
+                    "description": "\u6240\u5728\u7701\u5e02\uff08\u7701\u5e02\u533a\u5b57\u7b26\u4e32\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "verifyUser": {
+                    "description": "\u5ba1\u6838\u4eba\uff08\u540d\u5b57\u5b57\u7b26\u4e32\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "verifyTime": {
+                    "description": "\u5ba1\u6838\u65f6\u95f4(\u65f6\u95f4\u6233)",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "recommendInfo": {
+                    "description": "\u63a8\u8350\u4eba\uff08\u540d\u5b57\u5b57\u7b26\u4e32\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "black": {
+                    "description": "\u662f\u5426\u9ed1\u540d\u5355(0\u5426\uff0c1\u662f)",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "lastEditUser": {
+                    "description": "\u6700\u8fd1\u4fee\u6539\u4eba\uff08\u540d\u5b57\u5b57\u7b26\u4e32\uff09",
+                    "type": "string",
+                    "format": "string"
+                },
+                "lastEditTime": {
+                    "description": "\u6700\u540e\u7f16\u8f91\u65f6\u95f4(\u65f6\u95f4\u6233)",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "storeType": {
+                    "description": "\u5e97\u94fa\u7c7b\u578b",
+                    "type": "object",
+                    "$ref": "#/definitions/storeTypeItem"
+                },
+                "storeState": {
+                    "description": "\u5e97\u94fa\u72b6\u6001",
+                    "type": "object",
+                    "$ref": "#/definitions/storeStateItem"
+                },
+                "fromWhere": {
+                    "description": "\u5f00\u5e97\u6e20\u9053",
+                    "type": "object",
+                    "$ref": "#/definitions/storeFromWhereItem"
+                }
+            }
+        },
+        "storeTypeItem": {
+            "properties": {
+                "id": {
+                    "description": "\u7c7b\u578b\u6807\u8bc6",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "\u5e97\u94fa\u7c7b\u578b\uff081:\u4e2a\u4eba\u5e97\u94fa,2:\u5468\u8fb9\u7cbe\u9009,3:C\u5e97,4:B\u5e97(\u6211\u8981\u8fdb\u8d27),5:B\u5e97(\u975e\u6211\u8981\u8fdb\u8d27))",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "storeStateItem": {
+            "properties": {
+                "id": {
+                    "description": "\u72b6\u6001\u6807\u8bc6",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "\u5e97\u94fa\u72b6\u6001\uff080:\u5f85\u5ba1\u6838\uff0c1:\u5ba1\u6838\u901a\u8fc7\uff0c2:\u5df2\u5173\u95ed\uff0c3:\u6ce8\u518c\u6210\u529f\u4f46\u672a\u63d0\u4ea4\u5e97\u94fa\u8d44\u6599\uff0c4:\u5ba1\u6838\u4e0d\u901a\u8fc7\uff09",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "storeFromWhereItem": {
+            "properties": {
+                "id": {
+                    "description": "\u6e20\u9053\u6807\u8bc6",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "name": {
+                    "description": "\u5f00\u5e97\u6e20\u9053\uff081:APP\uff0c2:WEB\uff0c3:\u516c\u4f17\u53f7\uff09",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "storeSearcherCount": {
+            "properties": {
+                "count": {
+                    "description": "\u5546\u5bb6\u6570\u91cf",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "storeSearcherUrl": {
+            "properties": {
+                "url": {
+                    "description": "\u5bfc\u51fa\u7684\u5546\u94fa\u6570\u636e\u6587\u4ef6\u8def\u5f84",
+                    "type": "string",
+                    "format": "string"
+                },
+                "dlName": {
+                    "description": "\u4e0b\u8f7d\u65f6\u751f\u6210\u7684\u6587\u4ef6\u540d(\u4e0d\u542b\u540e\u7f00,eg:store123abc)",
+                    "type": "string",
+                    "format": "string"
+                },
+                "extName": {
+                    "description": "\u6587\u4ef6\u7684\u540e\u7f00\u540d(eg:.csv)",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "uploadfileFileInfoItem": {
+            "properties": {
+                "originName": {
+                    "description": "\u4e0a\u4f20\u65f6\u7684\u539f\u6587\u4ef6\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                },
+                "targetName": {
+                    "description": "\u4e0a\u4f20\u540e\u751f\u6210\u7684\u65b0\u6587\u4ef6\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                },
+                "targetPath": {
+                    "description": "\u4e0a\u4f20\u540e\u751f\u6210\u7684\u65b0\u6587\u4ef6\u8def\u5f84\u5730\u5740(\u53c8\u62cd\u4e91\u7684\u5730\u5740)",
+                    "type": "string",
+                    "format": "string"
+                },
+                "extension": {
+                    "description": "\u6587\u4ef6\u7684\u540e\u7f00,\u6bd4\u5982png,jpg\u7b49(\u4e0d\u5e26\u70b9\u53f7\u54df)",
+                    "type": "string",
+                    "format": "string"
+                },
+                "upyunPath": {
+                    "description": "\u4e0a\u4f20\u540e\u751f\u6210\u7684\u65b0\u6587\u4ef6\u7684\u7edd\u5bf9\u5730\u5740(\u53c8\u62cd\u4e91\u7684\u5730\u5740),\u4f8b\u5982:http://shq-pic.b0.upaiyun.com/mall/data/files/upload/201604/201604061512033184.jpg",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "userMemberBg1": {
+            "description": "\u6839\u636e\u7528\u6237id\u83b7\u53d6\u7528\u6237\u4fe1\u606f",
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u7528\u6237\u57fa\u672c\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u7528\u6237\u57fa\u672c\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": "#/definitions/userMemberInfoBg1"
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u7528\u6237\u57fa\u672c\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "userMemberInfoBg1": {
+            "properties": {
+                "uid": {
+                    "description": "\u7528\u6237id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "username": {
+                    "description": "\u7528\u6237\u540d",
+                    "type": "string",
+                    "format": "string"
+                },
+                "email": {
+                    "description": "\u7528\u6237\u90ae\u7bb1",
+                    "type": "string",
+                    "format": "string"
+                },
+                "realName": {
+                    "description": "\u771f\u5b9e\u59d3\u540d",
+                    "type": "string",
+                    "format": "string"
+                },
+                "gender": {
+                    "description": "\u6027\u522b",
+                    "type": "string",
+                    "format": "string"
+                },
+                "tel": {
+                    "description": "\u7535\u8bdd",
+                    "type": "string",
+                    "format": "string"
+                },
+                "regTime": {
+                    "description": "\u6ce8\u518c\u65f6\u95f4",
+                    "type": "string",
+                    "format": "string"
+                },
+                "lastLogin": {
+                    "description": "\u6700\u540e\u4e00\u6b21\u767b\u5f55\u65f6\u95f4",
+                    "type": "string",
+                    "format": "string"
+                },
+                "audit": {
+                    "description": "\u662f\u5426\u8ba4\u8bc1",
+                    "type": "string",
+                    "format": "string"
+                },
+                "memberType": {
+                    "description": "\u7528\u6237\u7c7b\u578b",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "userLoginBg1": {
+            "description": "\u7528\u6237\u767b\u5f55\u8fd4\u56de\u4fe1\u606f",
+            "properties": {
+                "data": {
+                    "description": "\u8fd4\u56de\u7528\u6237\u57fa\u672c\u4fe1\u606f",
+                    "properties": {
+                        "obj": {
+                            "description": "\u8fd4\u56de\u7528\u6237\u57fa\u672c\u4fe1\u606f",
+                            "type": "object",
+                            "$ref": "#/definitions/userLoginInfoBg1"
+                        },
+                        "list": {
+                            "description": "\u8fd4\u56de\u7528\u6237\u57fa\u672c\u4fe1\u606f",
+                            "type": "array",
+                            "items": ""
+                        }
+                    }
+                },
+                "msg": {
+                    "description": "\u63d0\u793a\u4fe1\u606f",
+                    "type": "string"
+                },
+                "error": {
+                    "description": "\u9519\u8bef\u7801",
+                    "type": "integer",
+                    "format": "int32"
+                }
+            }
+        },
+        "userLoginInfoBg1": {
+            "properties": {
+                "uid": {
+                    "description": "\u7528\u6237id",
+                    "type": "string",
+                    "format": "string"
+                },
+                "username": {
+                    "description": "\u7528\u6237\u540d",
+                    "type": "string",
+                    "format": "string"
+                },
+                "email": {
+                    "description": "\u7528\u6237\u90ae\u7bb1",
+                    "type": "string",
+                    "format": "string"
+                },
+                "xiaoquId": {
+                    "description": "\u5c0f\u533aid",
+                    "type": "string",
+                    "format": "string"
+                },
+                "bgApiToken": {
+                    "description": "\u672c\u5957\u63a5\u53e3\u6388\u6743\u7801",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        },
+        "wholesaleMarketList": {
+            "properties": {
+                "marketId": {
+                    "description": "\u6279\u53d1\u5e02\u573aid",
+                    "type": "integer",
+                    "format": "int32"
+                },
+                "marketName": {
+                    "description": "\u6279\u53d1\u5e02\u573a\u540d\u79f0",
+                    "type": "string",
+                    "format": "string"
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "api",
+            "description": "\u57fa\u672c\u63a5\u53e3"
+        },
+        {
+            "name": "user",
+            "description": "\u7528\u6237\u63a5\u53e3"
+        },
+        {
+            "name": "places",
+            "description": "\u5730\u533a\u670d\u52a1\u63a5\u53e3"
+        },
+        {
+            "name": "uploadfiles",
+            "description": "\u6587\u4ef6\u4e0a\u4f20\u63a5\u53e3"
+        },
+        {
+            "name": "storefeed",
+            "description": "\u5546\u5bb6feed\u63a5\u53e3"
+        },
+        {
+            "name": "order",
+            "description": "\u8ba2\u5355\u63a5\u53e3"
+        },
+        {
+            "name": "store",
+            "description": "\u5546\u5bb6\u63a5\u53e3"
+        },
+        {
+            "name": "scate",
+            "description": "\u5546\u5bb6\u5206\u7c7b\u63a5\u53e3"
+        },
+        {
+            "name": "oplog",
+            "description": "\u64cd\u4f5c\u65e5\u5fd7\u63a5\u53e3"
+        },
+        {
+            "name": "company",
+            "description": "\u516c\u53f8\u63a5\u53e3"
+        },
+        {
+            "name": "wholesalemarket",
+            "description": "\u6279\u53d1\u5e02\u573a\u63a5\u53e3"
+        }
+    ]
+}

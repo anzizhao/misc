@@ -113,7 +113,7 @@ Plugin 'bling/vim-airline'
 "" about "surroundings": parentheses, brackets, quotes, XML tags
 "Plugin 'tpope/vim-surround'
 ""html 标签补全 http://www.zfanw.com/blog/zencoding-vim-tutorial-chinese.html
-"Plugin 'mattn/emmet-vim'
+Plugin 'mattn/emmet-vim'
 ""ack-grep or ag:silver searcher
 Plugin 'mileszs/ack.vim'
 ""undo redo tree
@@ -204,7 +204,14 @@ Plugin 'mxw/vim-jsx'
 Plugin 'isRuslan/vim-es6'
 
 Plugin 'tpope/vim-repeat'
-Plugin 'wookiehangover/jshint'
+"Plugin 'wookiehangover/jshint'
+
+Plugin 'elzr/vim-json'
+
+Plugin 'heavenshell/vim-jsdoc'
+Plugin 'moll/vim-node'
+
+
 
 
 
@@ -366,7 +373,14 @@ set undodir=~/.vim/.undodir/
 set undofile
 
 "ctrlp settings
-let g:ctrlp_working_path_mode = 'w'
+"let g:ctrlp_working_path_mode = 'w'
+let g:ctrlp_working_path_mode = 'w' 
+let g:ctrlp_custom_ignore = { 
+            \ 'dir': '\v[\/](\.(git|hg|svn)$)|(node_modules)|(bower_components)', 
+            \ 'file': '\v\.(exe|so|dll)$', 
+            \ 'link': 'some_bad_symbolic_links', 
+            \ }
+
 
 """"""""""""""""""""""""""""""
 " others setting
@@ -496,20 +510,6 @@ map <Leader>se :Errors<cr>
 "let g:syntastic_check_on_open = 1
 "let g:syntastic_check_on_wq = 0
 "
-"""""""""""""""""""""""""
-""  php smart complete  "
-"""""""""""""""""""""""""
-""let g:phpcomplete_add_class_extensions = ['mongo']
-""let g:phpcomplete_add_function_extensions = ['mongo']
-""let g:phpcomplete_parse_docblock_comments = 1 "not working...
-"let g:phpcomplete_search_tags_for_variables = 1
-""let g:phpcomplete_complete_for_unknown_classes = 1
-""let g:phpcomplete_relax_static_constraint = 1
-"let g:phpcomplete_cache_taglists = 1
-"let g:phpcomplete_enhance_jump_to_definition = 1
-"let g:phpcomplete_mappings = { 'jump_to_def': ',g', }
-"autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
-
 """"""""""""""""""""""
 "  ycm autocomplete  "
 """"""""""""""""""""""
@@ -663,3 +663,27 @@ set encoding=utf-8
 let python_highlight_all=1
 "系统剪切板
 set clipboard=unnamed
+
+"json
+let g:vim_json_warnings=1
+"let g:vim_json_syntax_conceal = 2
+"
+
+"jsDoc 
+nmap <silent> <leader>fn  <Plug>(jsdoc)
+nmap <silent>  <leader>fn ?function<cr>:noh<cr><Plug>(jsdoc)
+
+
+
+"vim node 
+autocmd User Node
+            \ if &filetype == "javascript" |
+            \   nmap <buffer> <C-w>f <Plug>NodeVSplitGotoFile |
+            \   nmap <buffer> <C-w><C-f> <Plug>NodeVSplitGotoFile |
+            \ endif
+
+
+"emmet
+let g:user_emmet_leader_key='<C-H>'
+
+

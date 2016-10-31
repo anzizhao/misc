@@ -73,7 +73,7 @@ set backspace=indent,eol,start " Configure backspace so it acts as it should act
 set lazyredraw " Don't redraw while executing macros (good performance config)
 set history=700 " Sets how many lines of history VIM has to remember
 set noswapfile " no swap files
-set viminfo='100,n/home/zja/.vim/files/info/viminfo
+set viminfo='100,n~/.vim/files/info/viminfo
 set splitbelow 
 "set relativenumber " line number 
 "set tags=./tags
@@ -81,7 +81,7 @@ set splitbelow
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " vundle settingss
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set rtp+=/home/zja/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/Vundle.vim
 "set rtp+=~/.vim/bundle/unite.vim/autoload/unite.vim
 "set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim/
 call vundle#begin()
@@ -211,7 +211,7 @@ Plugin 'elzr/vim-json'
 Plugin 'heavenshell/vim-jsdoc'
 Plugin 'moll/vim-node'
 
-
+Plugin 'posva/vim-vue'
 
 
 
@@ -254,8 +254,9 @@ nmap <leader>tp :tabprevious<cr>
 "LEADER TOGGLES
 "nmap <leader>tt :TlistToggle<cr> "function! ToggleTree()
 
-nmap <leader>bu :Unite buffer<cr>
-nmap <leader>bt :UniteClose <cr>
+
+nmap <leader>mt :Unite buffer<cr>
+nmap <leader>mf :UniteClose <cr>
 
 " surround key map
 " as means add symbol
@@ -362,6 +363,7 @@ let NERDTreeShowFiles=1       "显示文件
 "let NERDTreeShowHidden=1      "显示隐藏文件
 let NERDTreeHightCursorline=1 "高亮显示当前文件或目录
 let NERDTreeWinPos='left'     "窗口位置
+"let NERDTreeWinPos='top'     "窗口位置
 let NERDTreeWinSize=31        "窗口宽度
 "let NERDTreeShowBookmarks = 1
 "let NERDTreeMinimalUI=1 "不显示'Bookmarks' label 'Press ? for help'
@@ -373,7 +375,6 @@ set undodir=~/.vim/.undodir/
 set undofile
 
 "ctrlp settings
-"let g:ctrlp_working_path_mode = 'w'
 let g:ctrlp_working_path_mode = 'w' 
 let g:ctrlp_custom_ignore = { 
             \ 'dir': '\v[\/](\.(git|hg|svn)$)|(node_modules)|(bower_components)', 
@@ -432,7 +433,7 @@ set grepprg=ack-grep\ -a\ --nocolor
 """"""""""""""""""
 "let g:ackprg = 'ag --nogroup --nocolor  --nogroup --column'
 "let g:ackprg = 'ag --nogroup --column -S'
-let g:ackprg = 'ag --nogroup --nocolor --column -S'
+let g:ackprg = 'ag --nogroup --nocolor --column -S  --ignore-dir node_modules/ '
 
 let g:unite_source_grep_command = 'ag'
 let g:unite_source_grep_default_opts =
@@ -519,8 +520,9 @@ map <Leader>se :Errors<cr>
 """""""""""""
 "  minibuf  "
 """""""""""""
-let g:miniBufExplVSplit=25
-let g:miniBufExplBRSplit=0
+"let g:miniBufExplVSplit=25
+let g:miniBufExplBRSplit=1
+
 
 """""""""""""""""""""""""""
 "  auto update tags file  "
@@ -684,6 +686,9 @@ autocmd User Node
 
 
 "emmet
-let g:user_emmet_leader_key='<C-H>'
+let g:user_emmet_leader_key='<C-Y>'
+
+
+
 
 

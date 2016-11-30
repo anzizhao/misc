@@ -1,0 +1,22 @@
+version: '2'
+
+services:
+  redis:
+    restart: always
+    image: sameersbn/redis:latest
+    command:
+    - --loglevel warning
+    volumes:
+    - /srv/docker/gitlab/redis:/var/lib/redis:Z
+
+  postgresql:
+    restart: always
+    image: sameersbn/postgresql:9.4-21
+    volumes:
+    - /srv/docker/gitlab/postgresql:/var/lib/postgresql:Z
+    environment:
+    - DB_USER=gitlab
+    - DB_PASS=password
+    - DB_NAME=gitlabhq_production
+    - DB_EXTENSION=pg_trgm
+

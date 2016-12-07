@@ -255,8 +255,9 @@ nmap <leader>tp :tabprevious<cr>
 "nmap <leader>tt :TlistToggle<cr> "function! ToggleTree()
 
 
-nmap <leader>mt :Unite buffer<cr>
-nmap <leader>mf :UniteClose <cr>
+
+nmap <leader>bu :Unite buffer<cr>
+nmap <leader>bt :UniteClose <cr>
 
 " surround key map
 " as means add symbol
@@ -520,6 +521,7 @@ map <Leader>se :Errors<cr>
 "let g:miniBufExplVSplit=25
 let g:miniBufExplBRSplit=1
 
+"let g:minibufexplbrsplit=1
 
 """""""""""""""""""""""""""
 "  auto update tags file  "

@@ -1,0 +1,5436 @@
+{
+	"id": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+	"name": "OA系统API",
+	"description": "OA系统API说明文档",
+	"order": [],
+	"folders": [
+		{
+			"id": "8a43fb24-e781-0485-8ed7-2ba0a60cad28",
+			"name": "api",
+			"description": "Folder for api",
+			"order": [
+				"cd955557-adf1-bb08-bd4a-c5407593ed6e",
+				"399caa5a-de85-2a03-1c82-d76bd9d1f911",
+				"e73a7b71-302b-9670-5160-60a32e6ddb6c",
+				"dd2d93b3-a5c3-b46c-3c02-867f9514ab98",
+				"7453dcdf-01d2-7100-8e80-5a16e0a890f8",
+				"585ed446-7263-72f0-2298-8ceff236fdf9",
+				"79a0489f-cfc8-0bea-53b6-bf7bffe1ad5b",
+				"a57f0643-3052-30f5-1491-89c65cbc66af",
+				"12b5a406-23b9-1c9e-89b8-84ef9e950698",
+				"90f12f5e-3644-f640-5e6d-a49590000d47",
+				"4620e567-cf8c-b544-b451-d2acbf83563f",
+				"7dc22d16-860d-33fd-a997-372fbedaacda",
+				"162d04e4-7812-8514-c7a0-ab5c0073d28f",
+				"9391483b-53f3-9849-7c76-e899e9fb6bd7",
+				"60c17699-e65c-4428-7890-40a0a5eb9ec1",
+				"2a93a8d7-6218-e4c3-b8c6-c803f61f7258",
+				"75864309-6433-125b-e0ab-50867b632cb1",
+				"bc00d44b-edf2-a463-f600-e139a02bd270",
+				"38307e85-ca9b-9368-fe6d-4963e089050e",
+				"3dcaca30-119f-43f2-62d5-c8372cd2e551",
+				"bb22f3b2-95f7-3d2d-c098-6224387414d8",
+				"1458d38c-33c0-f6b3-0126-26335c3bcddc",
+				"b5e78be4-a603-4dc6-bcc0-afe56653da0e",
+				"a22a6609-7a7b-5eec-731a-ab49af08948f",
+				"1f99929d-f627-9717-799a-85bd46aafdd7",
+				"efd2be11-9348-2d3a-7371-8cff6f54f4e2",
+				"23bc0627-5897-5c93-1189-1856fdc77c33",
+				"95bb9a85-ec57-81e4-68fd-6e72bdde67c6",
+				"ef50d0ec-8f3e-ba1e-544c-33dc87b9f5c2",
+				"cab20818-4214-ded2-3c69-e86b3098b141",
+				"fd4ccf6b-a7a9-79ae-0ae4-277221fb46b4",
+				"a2b16181-5830-1f73-0dad-36fdd279951e",
+				"80cb0240-9aef-ed50-02ff-44dcbf5b2e0b",
+				"ff5fc17c-5189-b419-4f2c-3e74a3a01fee",
+				"f948d5b8-69a4-7744-f448-c7bf51464708",
+				"cbcc6d32-cf8d-daa0-e9d9-0d6312e05fef",
+				"97e36fee-560d-a661-1b5a-8a72b08289f2",
+				"a28bffad-570d-3bed-a5c9-42da83482b54",
+				"ba36d31f-648c-b63d-17df-6df543d70ea2",
+				"a846761a-0977-bba0-615a-a44aee9428ca",
+				"046f4ceb-5032-36a5-aef6-80bce8ea33f6",
+				"d7c8763b-2ab7-8529-795e-ff0659f7784b",
+				"4afab484-bd58-9d79-f415-ca5844f61d5f",
+				"abcb5b4e-bec7-7ca0-813c-12118cdcb380",
+				"47c085e2-66d9-ac13-3e75-039d8ca58de4",
+				"76a959a7-5067-ceec-8786-1881f2b75b5f",
+				"7f987c73-0e84-76f5-1f44-27f25e96b371",
+				"1a93ce88-f5bf-0ae3-0326-c153c4879131",
+				"ff1f4143-a2fa-7560-dc16-b5be483056a0",
+				"0c9c2add-dc6e-d70e-78a8-035a2dde6a50",
+				"9afe2a63-732e-1d6d-9286-a1aca8377e1c",
+				"064f72a4-1c34-75e2-7ade-9fd23a0991d6",
+				"3deb0519-17c7-a2e9-bca8-2d01d055cee7",
+				"4a922fa8-7eb4-b674-40b3-f11c53d43f6d",
+				"25e63e47-36ef-05d4-8835-066022b9833f",
+				"a89f126d-e73a-3bfd-3453-3e2b86dffeec",
+				"36823dfe-2623-0618-38ce-be312eaed717",
+				"c2b97caa-429e-f630-faf3-8a24788279dd",
+				"ec1d83fc-df3d-be85-7890-624a98f75f2c",
+				"16fd28e5-36b9-24be-ccb2-aa97cf32e26a",
+				"7e8ce672-53cc-090e-cf12-e83997755229",
+				"ad4981f8-d83c-7589-325b-a570c3fabeef",
+				"9a9c4b8f-bbfb-7ca3-53c1-e538e51acc3b",
+				"226183de-66d9-ab85-2d71-9bbeec247a50",
+				"af574308-2dad-00c7-cc13-e260bd64f73f",
+				"ab2cd8ed-32ed-eb84-58ba-3cb7390b956e",
+				"58f56062-4e95-9c8a-14ea-239d4137196e",
+				"1335c5c5-ddee-a6ac-e2f6-f78e7174bbf3",
+				"53a0e275-6347-50cf-6e42-829785376b8f",
+				"76186be7-a7bf-6bc1-4114-8c3d021dfd0b",
+				"bd4ef121-d642-5eb2-976e-3f518477868d",
+				"83075c06-52a0-5a11-7009-b2a5ffb86235",
+				"f7200ac4-7c35-dfbc-acf3-fff7b5b61e9f",
+				"d45022cc-f611-6ae0-6ff2-6363e5562a4b",
+				"ed5270de-74ae-d5d1-25e7-ae159573d94e",
+				"dca10ef6-ee67-9e5f-4868-b8424c476333",
+				"a6e6b61e-a2ce-7a9e-10ae-e0807b965c37",
+				"cba2e4fa-f771-778c-ea3b-e83db8a6fb38",
+				"74dca3a5-8f0c-ec2d-f0b0-cc9901f50d90",
+				"346a8547-bced-2080-2afa-dc5d29c8e090",
+				"e95e382b-24ae-6638-4627-eae185fa2e0a",
+				"a928abda-a235-600d-0036-f5a1913c135b",
+				"5b0f3fc5-5db3-4675-5e0d-0af8a0709324",
+				"3d9b0315-21f9-afd7-61ba-0a4c4f8b328f",
+				"e9544800-3031-2edd-9e38-58f41c5f434b",
+				"74081df3-7056-d131-67f5-e2d345435331",
+				"381cdaeb-6269-3b58-aae3-8fdd6df97e92",
+				"6cfd2588-6e6c-04bb-48bb-63a78fc479a2",
+				"b7290b14-6cfc-bf54-4c13-16cdef04d1fd",
+				"aa7702e7-9828-51fc-4c24-a6060f867d41",
+				"9c33325f-c9cb-4515-a48a-824d385af685",
+				"5aa69b26-2744-a1e7-c60f-60fccac51954",
+				"11e13ba6-0a3f-b17b-e7ab-7e4d92d2a4fb",
+				"ae3e0007-1cf2-9bfe-831a-9c1639854017",
+				"e3b56767-d6e7-9db4-3677-1c85ae222674",
+				"6dc0b314-88c9-eda2-8d3d-9f96bd4f1dd9",
+				"5d53d3e0-63ec-b1b2-21f9-dfe1c206402b",
+				"89db2fc1-70db-6d3d-bd42-7c695f2fe26c",
+				"ec97312c-69ff-5319-a7e7-661e4315ad1e",
+				"a9580370-48b7-4994-2999-c9fcbdb9530f",
+				"fea45951-ccdc-471a-e188-2bffdf9e55fe",
+				"a4a90e46-7361-1d9b-3a58-29f51553e735",
+				"dca39fa5-f399-ada9-17a2-a3634d0a033f",
+				"b4440e1c-e9a0-26a1-df74-c67855093678",
+				"4ef5fa42-aa14-d171-1358-996f4d0459ee",
+				"cd741895-868c-1eeb-affe-1ba52f518269",
+				"cc22267c-a971-bf24-2815-2b9c700f4c71",
+				"dd620123-4bf2-ce4c-818c-2ae949c2c92a",
+				"0056e04c-28bf-f9c7-c8b7-8d594976fb97",
+				"79179719-e40e-fb95-16c3-5f011eb1b031",
+				"237f2b0b-8a7e-01fb-a1f4-4f635b18ca27",
+				"9fd1096b-79f2-9493-2ab6-47140e584d5e",
+				"f656723c-c18d-d803-d889-bc4ba5cc3975",
+				"dbe39d58-e84e-50cd-05ff-63cdf1bc623c",
+				"e0497064-e0ac-b0d3-ea79-06a3ac8c6dfb",
+				"1352d77e-1174-7321-82fb-0986df9d0614",
+				"521d3822-8133-855b-52a5-c5960130d8fc",
+				"249b584c-c2ba-a036-d0c6-05271a32eee7",
+				"d876886d-a863-9212-de0f-aca170454b24",
+				"405b9dc6-00c8-3158-4407-32958cbd3520",
+				"ba78fe2d-b8a2-e789-25a9-a451cb2af540",
+				"19648471-d58a-a1bb-db19-273c800f2b3d",
+				"65718873-2f52-e6c6-5a18-85cda4dff6a1",
+				"2c89dcb8-3350-2919-8cdc-b9d684b47078",
+				"481202ad-882a-fec8-4f65-017e2dfcaab1",
+				"cab4804d-66da-f0f8-76db-36651e19d3b5",
+				"7e0df1d4-03c5-bf2e-bacd-86aea6287a3d",
+				"61ecbd09-cace-ac85-b6f1-b1045a0c29db",
+				"f6e05fc3-bbb5-401e-f488-54139570ed41",
+				"e10aaf91-5437-69ef-f5dd-301a0ad0929c",
+				"aa017ac3-408f-f938-77d2-2ccc289ffaa5",
+				"dc12c0b0-282b-397d-ecc3-1d9a154fca17",
+				"25be633d-5c98-749d-22ef-7cc7111eb138",
+				"7ac5cf67-6a08-f87f-9dbd-b9931a8fb680",
+				"724ea3b9-0ef0-382b-e896-03e7173f3825",
+				"444be9ac-82b1-ce57-9756-c3b892b2ea54",
+				"d07343e1-ea07-8bae-d926-d8c124abbf1c",
+				"d01ed577-7c63-bf44-e970-22be21dd0485",
+				"58778e60-8596-919f-3112-29cccb2846af",
+				"7116aee6-29f0-d53e-a02d-5c00b4111e9d",
+				"47008a6c-15f0-3335-84cf-b908d5f939e5",
+				"b9444325-2ade-31dd-e6c1-faa51061d4a3",
+				"f48b5039-51c5-16b8-298f-fbb2ddea9bca",
+				"69d9fc1a-8c4a-c927-3f5a-0c030cb8ca5e",
+				"abe32536-f07e-d460-c369-e78bb57c22fb",
+				"dbc8298f-31e9-338d-c251-b2fc05bd5674",
+				"df6ca030-3217-fbf4-089f-73a344693aee",
+				"79161baa-805c-5724-6cc8-85e95e0b8f91",
+				"702da8d5-e862-d48e-68f2-7e76b79335f4",
+				"19594916-726d-0cf1-9509-836d6fd6b61c",
+				"06cce5c2-c73a-b621-7efd-f0d1c2bd9d76",
+				"22474fd4-4e86-778a-2ee6-2bb7df898ee4",
+				"fb77be71-ffbc-7f2c-f343-fbc69600b944",
+				"5c7cd840-84f1-410c-5fbb-563f63683e6a",
+				"e8e5c191-1260-5a81-2e7c-fa2e208dcf6a",
+				"2480e810-20ea-6064-cc06-6918f0715377",
+				"a94883e6-bf66-461d-431e-1e2e9e3b27a7",
+				"df4a38b4-d2c6-c4ad-0a52-115886a78a87",
+				"950dbfb2-337d-8273-8d94-717b8bcd3f4e",
+				"adfa2ed6-d3d1-36b0-d9e6-93dfbfc426e6",
+				"cf964127-e1de-d350-ea83-d06c56ec1abf",
+				"cffc4da3-2742-ffb8-3bdc-26e29194104a",
+				"63d941b9-eef6-03c8-91ae-2dce2a98e9ea"
+			],
+			"owner": 0
+		}
+	],
+	"timestamp": 1413302258635,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "0056e04c-28bf-f9c7-c8b7-8d594976fb97",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/follows/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定客户下的跟进情况的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定客户下的跟进情况的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "046f4ceb-5032-36a5-aef6-80bce8ea33f6",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/storeCategories",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取全部周边商家分类列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取全部周边商家分类列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "064f72a4-1c34-75e2-7ade-9fd23a0991d6",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/exportSkuCsv",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取导出库存文件",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取导出库存文件",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "06cce5c2-c73a-b621-7efd-f0d1c2bd9d76",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/position/{{posId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定id的职位详细信息",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定id的职位详细信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "0c9c2add-dc6e-d70e-78a8-035a2dde6a50",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/areas/provinces/{{pid}}/cities",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定省份下的城市列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取城市列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "11e13ba6-0a3f-b17b-e7ab-7e4d92d2a4fb",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/contacts/{contactId}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "删除客户的联系人资料",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除客户的联系人资料",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "12b5a406-23b9-1c9e-89b8-84ef9e950698",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/myrelated?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "与我有关的问题列表[与跟进有关]",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "与我有关的问题列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "1335c5c5-ddee-a6ac-e2f6-f78e7174bbf3",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/seld",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取用户指定日期范围销售记录",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取用户指定日期范围销售记录",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "1352d77e-1174-7321-82fb-0986df9d0614",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取优化建议列表",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "优化建议列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "1458d38c-33c0-f6b3-0126-26335c3bcddc",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/{{xqId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "_method",
+					"value": "{{_method}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据小区id,删除小区",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除小区",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "162d04e4-7812-8514-c7a0-ab5c0073d28f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/categories",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取所有问题分类",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取所有问题分类",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "16fd28e5-36b9-24be-ccb2-aa97cf32e26a",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran/logs/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "转帐列记录表长度",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "转帐记录列表长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "19594916-726d-0cf1-9509-836d6fd6b61c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/profile/user/{{uid}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定用户的呢称,真名,职位(个人档案性质,包含公司架构)",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定用户的呢称,真名,职位",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "19648471-d58a-a1bb-db19-273c800f2b3d",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/publishes/users/{{uid}}?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "某个用户发布的建议列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "某个用户发布的建议列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "1a93ce88-f5bf-0ae3-0326-c153c4879131",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/docs/{{did}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "{{cid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "{{description}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fid",
+					"value": "{{fid}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据文档ID，编辑文档",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑文档",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "1f99929d-f627-9717-799a-85bd46aafdd7",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/atts/{{attId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "_method",
+					"value": "{{_method}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据附件id，删除某小区中的指定的附件信息",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除某小区中的指定的附件信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "22474fd4-4e86-778a-2ee6-2bb7df898ee4",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/position/{{posId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "删除指定id的职位",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除指定id的职位",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "226183de-66d9-ab85-2d71-9bbeec247a50",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/distribute",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "将充值卡铺卡到商家手中",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "铺卡充值卡",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "237f2b0b-8a7e-01fb-a1f4-4f635b18ca27",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/follows/{{followId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取跟进情况详细",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取跟进情况详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "23bc0627-5897-5c93-1189-1856fdc77c33",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/{{xqId}}/contacts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "typeId",
+					"value": "{{typeId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "position",
+					"value": "{{position}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "gender",
+					"value": "{{gender}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "telephone",
+					"value": "{{telephone}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{remark}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加小区的联系人",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加小区的联系人",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "2480e810-20ea-6064-cc06-6918f0715377",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/mylist/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我(当前用户)跟进的商家列表的长度",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我(当前用户)跟进的商家列表的长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "249b584c-c2ba-a036-d0c6-05271a32eee7",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/{{suggestId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deptId",
+					"value": "{{deptId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "doTime",
+					"value": "{{doTime}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "{{content}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUids",
+					"value": "{{followUids}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "attIds",
+					"value": "{{attIds}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "编辑优化建议",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑优化建议",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "25be633d-5c98-749d-22ef-7cc7111eb138",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/categories",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categoryName",
+					"value": "{{categoryName}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "保存建议分类",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "保存建议分类",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "25e63e47-36ef-05d4-8835-066022b9833f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "财务人员录入充值卡",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "录入充值卡",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "2a93a8d7-6218-e4c3-b8c6-c803f61f7258",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/areas/{{areaId}}/xiaoqus",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据地区id获取其所辖下小区列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取小区简单列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "2c89dcb8-3350-2919-8cdc-b9d684b47078",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/mypublishes?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我发布的建议列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我发布的建议列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "346a8547-bced-2080-2afa-dc5d29c8e090",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/payment",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "回款,注意,回款后不能进行充值卡销售操作",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "回款",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "36823dfe-2623-0618-38ce-be312eaed717",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "将充值卡申请转帐到其他用户",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "转帐充值卡",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "381cdaeb-6269-3b58-aae3-8fdd6df97e92",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/merchant",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUid",
+					"value": "{{followUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "projectNum",
+					"value": "{{projectNum}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qualification",
+					"value": "{{qualification}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加新的客户(商圈客户)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加新的物业客户",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "38307e85-ca9b-9368-fe6d-4963e089050e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取楼盘小区数量",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取楼盘小区数量",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "399caa5a-de85-2a03-1c82-d76bd9d1f911",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deptId",
+					"value": "{{deptId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "{{content}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUids",
+					"value": "{{followUids}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "attIds",
+					"value": "{{attIds}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "发布问题反馈",
+			"descriptionFormat": "html",
+			"time": 1456995662279,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "发布问题反馈",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "3d9b0315-21f9-afd7-61ba-0a4c4f8b328f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/ranking/user",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定时间段用户销售排行",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定时间段用户销售排行",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "3dcaca30-119f-43f2-62d5-c8372cd2e551",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/{{xqId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取楼盘小区详细内容",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取楼盘小区详细内容",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "3deb0519-17c7-a2e9-bca8-2d01d055cee7",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/{{id}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取充值卡详情",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "充值卡详情",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "405b9dc6-00c8-3158-4407-32958cbd3520",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/{{suggestsId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取建议详细",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取建议详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "444be9ac-82b1-ce57-9756-c3b892b2ea54",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/uploadfiles/{{id}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据文件ID，获取文件信息",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取文件信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "4620e567-cf8c-b544-b451-d2acbf83563f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/keyword?keyword=abc?keyword={{keyword}}&offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过关键字搜索问题反馈列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "通过关键字搜索问题反馈列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "47008a6c-15f0-3335-84cf-b908d5f939e5",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/departments/com/{{companyId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定公司下的部门列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定公司下的部门列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "47c085e2-66d9-ac13-3e75-039d8ca58de4",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/docs?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "文档列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "文档列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "481202ad-882a-fec8-4f65-017e2dfcaab1",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/mypublishes/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我发布的建议列表的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我发布的建议列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "4a922fa8-7eb4-b674-40b3-f11c53d43f6d",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/name/{{id}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取充值卡详情(通过充值卡名字查找)",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "充值卡详情(通过充值卡名字查找)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "4afab484-bd58-9d79-f415-ca5844f61d5f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/users/login",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "_method",
+					"value": "{{_method}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "用户登录",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "用户登录",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "4ef5fa42-aa14-d171-1358-996f4d0459ee",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/qualifications",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取全部的企业资质列表",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取全部的企业资质列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "521d3822-8133-855b-52a5-c5960130d8fc",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deptId",
+					"value": "{{deptId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "doTime",
+					"value": "{{doTime}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "{{content}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUids",
+					"value": "{{followUids}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "attIds",
+					"value": "{{attIds}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "发布优化建议",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "发布优化建议",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "53a0e275-6347-50cf-6e42-829785376b8f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/seld",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "将充值卡登记为售卖",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "售卖充值卡",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "585ed446-7263-72f0-2298-8ceff236fdf9",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取问题总数",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取问题总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "58778e60-8596-919f-3112-29cccb2846af",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/company/{{companyId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "删除指定id的公司信息",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除公司信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "58f56062-4e95-9c8a-14ea-239d4137196e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/distribute/logs/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "铺卡记录列表长度",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "铺卡记录列表长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "5aa69b26-2744-a1e7-c60f-60fccac51954",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/contacts/{contactId}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "{{phone}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "wechat",
+					"value": "{{wechat}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "编辑客户的联系人资料",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑客户的联系人资料",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "5b0f3fc5-5db3-4675-5e0d-0af8a0709324",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/ranking/xiaoqu",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定时间段小区销售排行",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定时间段小区销售排行",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "5c7cd840-84f1-410c-5fbb-563f63683e6a",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取商圈商家列表长度",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "商圈商家列表长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "5d53d3e0-63ec-b1b2-21f9-dfe1c206402b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/attachs/{upId}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据附件的文件id,删除附件",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除附件",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "60c17699-e65c-4428-7890-40a0a5eb9ec1",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/statuses/issue/{{issueId}}?status={{status}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "改变问题状态",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "改变问题状态",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "61ecbd09-cace-ac85-b6f1-b1045a0c29db",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/myrelations?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取我跟进的建议列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取我跟进的建议列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "63d941b9-eef6-03c8-91ae-2dce2a98e9ea",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/{{id}}/relations",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "删除商圈商家和跟进人的关联关系",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除商圈商家和跟进人的关联关系",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "65718873-2f52-e6c6-5a18-85cda4dff6a1",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/publishes/users/{{uid}}/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我发布的建议列表的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我发布的建议列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "69d9fc1a-8c4a-c927-3f5a-0c030cb8ca5e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/positions/dep/{{deptId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过部门id,获取其下的职位列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定部门下的职位列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "6cfd2588-6e6c-04bb-48bb-63a78fc479a2",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据客户id,获取客户详细",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取客户详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "6dc0b314-88c9-eda2-8d3d-9f96bd4f1dd9",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/attachs",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "在指定客户下,添加附件(暂时一次添加一个附件)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加附件",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "702da8d5-e862-d48e-68f2-7e76b79335f4",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/user/{{uid}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定用户的职位部门信息（公司架构性质）",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定用户的职位部门信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "7116aee6-29f0-d53e-a02d-5c00b4111e9d",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/departments",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取所有部门",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取所有部门",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "724ea3b9-0ef0-382b-e896-03e7173f3825",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/uploadfiles?app={{app}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "FILES",
+					"value": "{{FILES}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "上传文件,暂时只支持一个文件",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "上传文件",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "74081df3-7056-d131-67f5-e2d345435331",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUid",
+					"value": "{{followUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "projectNum",
+					"value": "{{projectNum}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qualification",
+					"value": "{{qualification}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加新的客户(默认是物业客户)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加新的物业客户",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "7453dcdf-01d2-7100-8e80-5a16e0a890f8",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/{{issuesId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取问题详细",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取问题详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "74dca3a5-8f0c-ec2d-f0b0-cc9901f50d90",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/payment",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取用户回款记录",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取用户回款记录",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "75864309-6433-125b-e0ab-50867b632cb1",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取楼盘小区列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取楼盘小区列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "76186be7-a7bf-6bc1-4114-8c3d021dfd0b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/seld/names",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "将充值卡登记为售卖",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "售卖充值卡(通过充值卡名字数组)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "76a959a7-5067-ceec-8786-1881f2b75b5f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/docs",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "uid",
+					"value": "{{uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cid",
+					"value": "{{cid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "description",
+					"value": "{{description}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "fid",
+					"value": "{{fid}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加新的文档",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加文档",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "79161baa-805c-5724-6cc8-85e95e0b8f91",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/users?posIds=1,2,3?posIds={{posIds}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过多个职位id，获取相应用户的数据列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "根据多个职位id,获取用户列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "79179719-e40e-fb95-16c3-5f011eb1b031",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/follows/total",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定客户下相关的跟进情况(全部,不分页)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "跟进情况列表(全部,不分页)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "79a0489f-cfc8-0bea-53b6-bf7bffe1ad5b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/myissue?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我发布的问题列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我发布的问题列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "7ac5cf67-6a08-f87f-9dbd-b9931a8fb680",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/{{suggestId}}/statuses",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "确认完成(改变建议状态)",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "确认完成状态",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "7dc22d16-860d-33fd-a997-372fbedaacda",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/keyword/count?keyword=abc?keyword={{keyword}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过关键字搜索问题反馈列表的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "通过关键字搜索问题反馈列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "7e0df1d4-03c5-bf2e-bacd-86aea6287a3d",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/relations/users/{{uid}}/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取某个用户跟进的优化建议列表的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取某个用户跟进的优化建议列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "7e8ce672-53cc-090e-cf12-e83997755229",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran/names",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "将充值卡申请转帐到其他用户",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "转帐充值卡(通过充值卡名字数组)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "7f987c73-0e84-76f5-1f44-27f25e96b371",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/docs/{{did}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据文档ID，获取文档详细",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "文档详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "80cb0240-9aef-ed50-02ff-44dcbf5b2e0b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/stores/{{storeId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取周边商家详细内容",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取周边商家详细内容",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "83075c06-52a0-5a11-7009-b2a5ffb86235",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/logs/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "操作记录列表长度",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "操作记录列表长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "89db2fc1-70db-6d3d-bd42-7c695f2fe26c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "所有客户的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "所有客户的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "90f12f5e-3644-f640-5e6d-a49590000d47",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/myrelated/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "与我有关的问题列表[与跟进有关]的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "与我有关的问题列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "9391483b-53f3-9849-7c76-e899e9fb6bd7",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/categories",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "categoryName",
+					"value": "{{categoryName}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "保存问题分类",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "保存问题分类",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "950dbfb2-337d-8273-8d94-717b8bcd3f4e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/searcher/keyword/?kw={{keyword}}?kw={{kw}}&offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "模糊搜索商家列表(搜索商家名称、推荐人名称、商家ID)",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "模糊搜索商家列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "95bb9a85-ec57-81e4-68fd-6e72bdde67c6",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/contacts/{{contactId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据联系人id，删除某小区中的指定的联系人信息",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除某小区中的指定的联系人信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "97e36fee-560d-a661-1b5a-8a72b08289f2",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/stores/{{storeId}}/atts/{attId}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加周边商家的附件",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加周边商家的附件",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "9a9c4b8f-bbfb-7ca3-53c1-e538e51acc3b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran/cancel",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "取消转帐充值卡到其他用户",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "取消转帐充值卡",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "9afe2a63-732e-1d6d-9286-a1aca8377e1c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/areas/{{areaId}}/areas",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据上级地区ID获取其管辖下的地区列表,如城市下的行政区",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取地区列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "9c33325f-c9cb-4515-a48a-824d385af685",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/contacts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "{{phone}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "wechat",
+					"value": "{{wechat}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加客户的联系人",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加客户的联系人",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "9fd1096b-79f2-9493-2ab6-47140e584d5e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/searchers?startTime={{Y-m-d}}&endTime={Y-m-d}...?startTime={{startTime}}&endTime={{endTime}}&keyword={{keyword}}&status={{status}}&createUid={{createUid}}&city={{city}}&offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "高级搜索客户结果的列表(分页)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取客户列表(高级搜索)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a22a6609-7a7b-5eec-731a-ab49af08948f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/{{xqId}}/atts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据小区id,获取此小区的附件列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取小区的附件列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a28bffad-570d-3bed-a5c9-42da83482b54",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/stores/{{storeId}}/atts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据周边商家id,获取此商家的附件列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取周边商家的附件列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a2b16181-5830-1f73-0dad-36fdd279951e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/{{xqId}}/stores/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定小区下的周边商家数量",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取周边商家数量",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a4a90e46-7361-1d9b-3a58-29f51553e735",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/relations/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取我管辖的客户的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我管辖的客户的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a57f0643-3052-30f5-1491-89c65cbc66af",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/myissue/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我发布的问题列表的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我发布的问题列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a6e6b61e-a2ce-7a9e-10ae-e0807b965c37",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/transku/{{value}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取面值的经手库存列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取面值的经手库存列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a846761a-0977-bba0-615a-a44aee9428ca",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/propertyCompanies",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取全部物业公司列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取全部物业公司列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a89f126d-e73a-3bfd-3453-3e2b86dffeec",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "转帐列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "转帐列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a928abda-a235-600d-0036-f5a1913c135b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/payment/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取用户回款记录列表长度",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取用户回款记录列表长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a94883e6-bf66-461d-431e-1e2e9e3b27a7",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/users/{{uid}}?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过跟进人uid查找其跟进的商家列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "查找跟进的商家列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "a9580370-48b7-4994-2999-c9fcbdb9530f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/mine/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取我创建的客户的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我创建的客户的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "aa017ac3-408f-f938-77d2-2ccc289ffaa5",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/keyword/count?keyword=abc?keyword={{keyword}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过关键字搜索优化建议列表的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "通过关键字搜索优化建议列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "aa7702e7-9828-51fc-4c24-a6060f867d41",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/contacts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过客户id,获取其下的所有联系人",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取联系人列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ab2cd8ed-32ed-eb84-58ba-3cb7390b956e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/distribute/logs",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "铺卡记录列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "铺卡记录列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "abcb5b4e-bec7-7ca0-813c-12118cdcb380",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/users/avatar/{{uid}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据用户uid,获取用户头像",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "用户头像",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "abe32536-f07e-d460-c369-e78bb57c22fb",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/positionIds/dep/{{deptId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过部门id获取其下的职位id数组(多个职位id字符串)",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定部门下的职位id列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ad4981f8-d83c-7589-325b-a570c3fabeef",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran/receive",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "收取被人转帐的充值卡",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "收取转帐充值卡",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "adfa2ed6-d3d1-36b0-d9e6-93dfbfc426e6",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/searcher/keyword/count/?kw={{keyword}}?kw={{kw}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "模糊搜索商家列表的长度(搜索商家名称、推荐人名称、商家ID)",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "模糊搜索商家列表的长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ae3e0007-1cf2-9bfe-831a-9c1639854017",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/districts?xqId={{xqId}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "绑定小区/片区到指定的客户上(添加项目关联)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "绑定小区/片区到指定的客户上(添加项目关联)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "af574308-2dad-00c7-cc13-e260bd64f73f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/distribute/names",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "将充值卡铺卡到商家手中",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "铺卡充值卡(通过充值卡名字数组)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "b4440e1c-e9a0-26a1-df74-c67855093678",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/keyword/count?kw=abc?kw={{kw}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取通过关键字搜索客户的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取通过关键字搜索客户的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "b5e78be4-a603-4dc6-bcc0-afe56653da0e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/{{xqId}}/atts/{attId}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加小区的附件",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加小区的附件",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "b7290b14-6cfc-bf54-4c13-16cdef04d1fd",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "custType",
+					"value": "{{custType}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "follow_uid",
+					"value": "{{follow_uid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "projectNum",
+					"value": "{{projectNum}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "qualification",
+					"value": "{{qualification}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据客户id,编辑客户资料",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑客户资料",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "b9444325-2ade-31dd-e6c1-faa51061d4a3",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/department/{{deptId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定id的部门详细信息",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取部门详细信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ba36d31f-648c-b63d-17df-6df543d70ea2",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/stores/atts/{{attId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "_method",
+					"value": "{{_method}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据附件id，删除周边商家的指定的某个附件信息",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除周边商家的指定的某个附件信息",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ba78fe2d-b8a2-e789-25a9-a451cb2af540",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取建议总数",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取建议总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "bb22f3b2-95f7-3d2d-c098-6224387414d8",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/{{xqId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "xiaoquName",
+					"value": "{{xiaoquName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coverFileId",
+					"value": "{{coverFileId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "propertyId",
+					"value": "{{propertyId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "propertyName",
+					"value": "{{propertyName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "provinceId",
+					"value": "{{provinceId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cityId",
+					"value": "{{cityId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "areaId",
+					"value": "{{areaId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "humanCount",
+					"value": "{{humanCount}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "houseCount",
+					"value": "{{houseCount}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "aereage",
+					"value": "{{aereage}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "{{address}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isSpace",
+					"value": "{{isSpace}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "spaceIntro",
+					"value": "{{spaceIntro}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{remark}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "chargeUid",
+					"value": "{{chargeUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "xiaoquId",
+					"value": "{{xiaoquId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "_method",
+					"value": "{{_method}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据小区id,编辑小区",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑小区",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "bc00d44b-edf2-a463-f600-e139a02bd270",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "xiaoquName",
+					"value": "{{xiaoquName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coverFileId",
+					"value": "{{coverFileId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "propertyId",
+					"value": "{{propertyId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "propertyName",
+					"value": "{{propertyName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "provinceId",
+					"value": "{{provinceId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cityId",
+					"value": "{{cityId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "areaId",
+					"value": "{{areaId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "humanCount",
+					"value": "{{humanCount}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "houseCount",
+					"value": "{{houseCount}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "aereage",
+					"value": "{{aereage}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "{{address}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "isSpace",
+					"value": "{{isSpace}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "spaceIntro",
+					"value": "{{spaceIntro}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{remark}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "chargeUid",
+					"value": "{{chargeUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "xiaoquId",
+					"value": "{{xiaoquId}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加新的小区",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加小区",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "bd4ef121-d642-5eb2-976e-3f518477868d",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/logs",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "操作记录列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "操作记录列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "c2b97caa-429e-f630-faf3-8a24788279dd",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "转帐列表长度",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "转帐列表长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cab20818-4214-ded2-3c69-e86b3098b141",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/searchers/keyword/count?kw={{kw}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过关键词,搜索楼盘小区数量",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "通过关键词,搜索楼盘小区数量",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cab4804d-66da-f0f8-76db-36651e19d3b5",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/relations/users/{{uid}}?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取某个用户跟进的优化建议列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取某个用户跟进的优化建议列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cba2e4fa-f771-778c-ea3b-e83db8a6fb38",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/seld/statistic",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取用户销售统计",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取用户销售统计",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cbcc6d32-cf8d-daa0-e9d9-0d6312e05fef",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/stores",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "xqId",
+					"value": "{{xqId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "storeName",
+					"value": "{{storeName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coverFileId",
+					"value": "{{coverFileId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateName",
+					"value": "{{cateName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contactName",
+					"value": "{{contactName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contactPhone",
+					"value": "{{contactPhone}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "{{address}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "distPrice",
+					"value": "{{distPrice}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "distTime",
+					"value": "{{distTime}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "distArea",
+					"value": "{{distArea}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hotGoods",
+					"value": "{{hotGoods}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "intenFlag",
+					"value": "{{intenFlag}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "intenText",
+					"value": "{{intenText}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{remark}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加新的周边商家",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加周边商家",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cc22267c-a971-bf24-2815-2b9c700f4c71",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/follows",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUid",
+					"value": "{{followUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "message",
+					"value": "{{message}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followTime",
+					"value": "{{followTime}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followType",
+					"value": "{{followType}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followStatus",
+					"value": "{{followStatus}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "colleagueUid",
+					"value": "{{colleagueUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "signUid",
+					"value": "{{signUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "signDate",
+					"value": "{{signDate}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "signCity",
+					"value": "{{signCity}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "添加跟进情况",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "添加跟进情况",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cd741895-868c-1eeb-affe-1ba52f518269",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/follows?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "指定客户下的跟进情况列表(分页)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "跟进情况列表(分页)",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cd955557-adf1-bb08-bd4a-c5407593ed6e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取问题反馈列表",
+			"descriptionFormat": "html",
+			"time": 1456995662279,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "问题反馈列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cf964127-e1de-d350-ea83-d06c56ec1abf",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/{{id}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据商圈商家ID，获取商圈商家详细",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "商圈商家详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "cffc4da3-2742-ffb8-3bdc-26e29194104a",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/{{id}}/relations",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "绑定关联关系，添加商圈商家和跟进人的关联关系",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "绑定商圈商家和跟进人的关联关系",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "d01ed577-7c63-bf44-e970-22be21dd0485",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/company/{{companyId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定id的公司详细信息",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取公司详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "d07343e1-ea07-8bae-d926-d8c124abbf1c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/companies",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取所有公司",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取所有公司",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "d45022cc-f611-6ae0-6ff2-6363e5562a4b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/sku/sum",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取库存面值统计",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取库存面值统计",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "d7c8763b-2ab7-8529-795e-ff0659f7784b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/users",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "POST",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "{{email}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "name",
+					"value": "{{name}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "{{password}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "用户注册",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "用户注册",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "d876886d-a863-9212-de0f-aca170454b24",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/{{suggestId}}/resets",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deptId",
+					"value": "{{deptId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "{{content}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUids",
+					"value": "{{followUids}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "attIds",
+					"value": "{{attIds}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "重设优化建议",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "重设优化建议",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "dbc8298f-31e9-338d-c251-b2fc05bd5674",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/users/dep/{{deptId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过单个部门id,获取其下用户的数据列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取指定部门下的用户列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "dbe39d58-e84e-50cd-05ff-63cdf1bc623c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/hrs/{{uid}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据用户uid,获取其HR档案详细",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "HR档案详细",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "dc12c0b0-282b-397d-ecc3-1d9a154fca17",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/categories",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取所有建议分类",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取所有建议分类",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "dca10ef6-ee67-9e5f-4868-b8424c476333",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/transku",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取经手库存统计",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取经手库存统计",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "dca39fa5-f399-ada9-17a2-a3634d0a033f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/keyword?kw=abc?kw={{kw}}&offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过关键字搜索客户列表",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "通过关键字搜索客户列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "dd2d93b3-a5c3-b46c-3c02-867f9514ab98",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/resettings/{{issueId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deptId",
+					"value": "{{deptId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "{{content}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUids",
+					"value": "{{followUids}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "attIds",
+					"value": "{{attIds}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "重设问题反馈",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "重设问题反馈",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "dd620123-4bf2-ce4c-818c-2ae949c2c92a",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/follows/{followId}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUid",
+					"value": "{{followUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "message",
+					"value": "{{message}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followTime",
+					"value": "{{followTime}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followType",
+					"value": "{{followType}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followStatus",
+					"value": "{{followStatus}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "colleagueUid",
+					"value": "{{colleagueUid}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "signCity",
+					"value": "{{signCity}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "编辑跟进情况",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑跟进情况",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "df4a38b4-d2c6-c4ad-0a52-115886a78a87",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/users/{{uid}}/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过跟进人uid查找其跟进的商家列表的长度",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "查找跟进的商家列表的长度",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "df6ca030-3217-fbf4-089f-73a344693aee",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/users/pos/{{posId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过单个职位id，获取相应用户的数据列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "根据职位id,获取用户列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "e0497064-e0ac-b0d3-ea79-06a3ac8c6dfb",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/hrs/{{uid}}/subordinates",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据用户uid，获取其直属下级(用户列表)",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取用户直属下级",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "e10aaf91-5437-69ef-f5dd-301a0ad0929c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/keyword?keyword=abc?keyword={{keyword}}&offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过关键字搜索优化建议列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "通过关键字搜索优化建议列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "e3b56767-d6e7-9db4-3677-1c85ae222674",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/{{custId}}/attachs",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取客户的附件列表",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取客户的附件列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "e73a7b71-302b-9670-5160-60a32e6ddb6c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/issues/{{issueId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "deptId",
+					"value": "{{deptId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "title",
+					"value": "{{title}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "content",
+					"value": "{{content}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "followUids",
+					"value": "{{followUids}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "attIds",
+					"value": "{{attIds}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "编辑问题反馈",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑问题反馈",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "e8e5c191-1260-5a81-2e7c-fa2e208dcf6a",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants/mylist?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我(当前用户)跟进的商家列表",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我(当前用户)跟进的商家列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "e9544800-3031-2edd-9e38-58f41c5f434b",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "所有客户的列表",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "所有客户的列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "e95e382b-24ae-6638-4627-eae185fa2e0a",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/payment/isPaid",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "查询当天是否已回款",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "查询当天是否已回款",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ec1d83fc-df3d-be85-7890-624a98f75f2c",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/tran/logs",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "转帐记录列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "转帐记录列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ec97312c-69ff-5319-a7e7-661e4315ad1e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/mine?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我创建的客户列表",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我创建的客户列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ed5270de-74ae-d5d1-25e7-ae159573d94e",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/sku/{{value}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取面值的库存列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取面值的库存列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ef50d0ec-8f3e-ba1e-544c-33dc87b9f5c2",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/searchers/keyword?kw={{kw}}&offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "通过关键词搜索楼盘小区的列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "通过关键词搜索楼盘小区的列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "efd2be11-9348-2d3a-7371-8cff6f54f4e2",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/districts/{{xqId}}/contacts",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据小区id,获取此小区的联系人列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取小区的联系人列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "f48b5039-51c5-16b8-298f-fbb2ddea9bca",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/positions/department/{{deptId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "删除指定id的部门",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除部门",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "f656723c-c18d-d803-d889-bc4ba5cc3975",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/searchers/count?startTime={{Y-m-d}}&endTime={Y-m-d}...?startTime={{startTime}}&endTime={{endTime}}&keyword={{keyword}}&status={{status}}&createUid={{createUid}}&city={{city}}&offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取高级搜索客户结果的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取高级搜索客户结果的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "f6e05fc3-bbb5-401e-f488-54139570ed41",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/suggests/myrelations/count",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取我跟进的建议列表的总数",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取我跟进的建议列表的总数",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "f7200ac4-7c35-dfbc-acf3-fff7b5b61e9f",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/cards/sku",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取库存统计",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取库存统计",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "f948d5b8-69a4-7744-f448-c7bf51464708",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/stores/{{storeId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "DELETE",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "_method",
+					"value": "{{_method}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据商家id,删除周边商家",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "删除周边商家",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "fb77be71-ffbc-7f2c-f343-fbc69600b944",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/merchants?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取商圈商家列表（分页）",
+			"descriptionFormat": "html",
+			"time": 1456995662283,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "商圈商家列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "fd4ccf6b-a7a9-79ae-0ae4-277221fb46b4",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/{{xqId}}/stores?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取指定小区下的周边商家列表",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取周边商家列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "fea45951-ccdc-471a-e188-2bffdf9e55fe",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/customers/relations?offset={{offset}}&limit={{limit}}&",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "我管辖的客户列表,包括本人及其下属的客户",
+			"descriptionFormat": "html",
+			"time": 1456995662282,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "我管辖的客户列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ff1f4143-a2fa-7560-dc16-b5be483056a0",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/areas/provinces",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "GET",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "获取所有省份列表",
+			"descriptionFormat": "html",
+			"time": 1456995662281,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "获取省份列表",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		},
+		{
+			"id": "ff5fc17c-5189-b419-4f2c-3e74a3a01fee",
+			"headers": "",
+			"url": "http://newoa.bb/api/v1.0/xiaoqus/stores/{{storeId}}",
+			"pathVariables": {},
+			"preRequestScript": "",
+			"method": "PUT",
+			"data": [
+				{
+					"key": "size",
+					"value": "original",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "xqId",
+					"value": "{{xqId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "storeName",
+					"value": "{{storeName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "coverFileId",
+					"value": "{{coverFileId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateId",
+					"value": "{{cateId}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "cateName",
+					"value": "{{cateName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contactName",
+					"value": "{{contactName}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "contactPhone",
+					"value": "{{contactPhone}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "{{address}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "distPrice",
+					"value": "{{distPrice}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "distTime",
+					"value": "{{distTime}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "distArea",
+					"value": "{{distArea}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "hotGoods",
+					"value": "{{hotGoods}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "intenFlag",
+					"value": "{{intenFlag}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "intenText",
+					"value": "{{intenText}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "remark",
+					"value": "{{remark}}",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "_method",
+					"value": "{{_method}}",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"description": "根据商家id,编辑周边商家",
+			"descriptionFormat": "html",
+			"time": 1456995662280,
+			"version": 2,
+			"responses": [],
+			"tests": "",
+			"collectionId": "7785de1d-7f57-be7d-2abe-860ceceaed6c",
+			"name": "编辑周边商家",
+			"folder": "8a43fb24-e781-0485-8ed7-2ba0a60cad28"
+		}
+	]
+}

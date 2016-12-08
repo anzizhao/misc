@@ -213,7 +213,14 @@ Plugin 'moll/vim-node'
 
 Plugin 'posva/vim-vue'
 
+Plugin 'wavded/vim-stylus'
 
+Plugin 'guileen/vim-node-dict'
+Plugin 'myhere/vim-nodejs-complete'
+
+Plugin 'mattn/jscomplete-vim'
+
+Plugin 'hujo/jscomplete-html5API'
 
 call vundle#end()
 
@@ -236,12 +243,14 @@ map <C-r> <C-W>r
 " jump to function header
 map <leader>[  ?function<cr>
 map <leader>]  ?function<cr>/{<cr>%<cr>
+
 " tern_for_vim map 
 nmap <leader>f :TernDef<cr>
 nmap <leader>l :TernRefs<cr>
 nmap <leader>t :TernType<cr>
 nmap <leader>d :TernDoc<cr>
 map <C-;> ;
+
 "buffer next and pre
 nmap <leader>n :bn<cr>
 nmap <leader>p :bp<cr>
@@ -697,4 +706,32 @@ let g:user_emmet_leader_key='<C-Y>'
 "endif
 
 
+"Plugin 'guileen/vim-node-dict'
+au FileType javascript set dictionary+=$HOME/.vim/bundle/vim-node-dict/node.dict
 
+
+
+"Plugin 'myhere/vim-nodejs-complete'
+let g:nodejs_complete_config = {
+            \  'js_compl_fn': 'jscomplete#CompleteJS',
+            \  'max_node_compl_len': 15
+            \}
+
+
+"Plugin 'mattn/jscomplete-vim'
+autocmd FileType javascript
+            \ :setl omnifunc=jscomplete#CompleteJS
+
+
+
+
+"Plugin 'hujo/jscomplete-html5API'
+let g:jscomplete_use = ['dom', 'html5API']
+
+" webGLを使用する場合
+let g:jscomplete_use = ['dom', 'html5API', 'webGL']
+
+" canvas.getContext() は CanvasRenderingContext2D
+" に割り当てているので
+" WebGLRenderingContextを使用する場合は変数名を登録します
+let g:jscomplete_webgl_ns = 'webgl'

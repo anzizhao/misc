@@ -1,0 +1,17 @@
+1 nodejs 
+    express 框架  怎么使用? 
+    路由? 资源?  类似python的twisted?  
+    例子:
+    中间件  use   处理http请求的函数   
+    app.set  设置系统变量  
+        view 和 view engine   express 框架里的系统变量 
+    然后时express的router 设置路由  ,在回调函数里   render返回渲染的网页  
+    router.get router.post router.delete  router 是一些restful的请求 
+
+
+
+1. bookLunch   两个功能怎么存放   
+    两个目录   一个链接?  
+        meanio full stack 技术
+        key: 
+            Everything in mean.io is a package 

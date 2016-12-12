@@ -1,0 +1,4 @@
+1. ui-view 为什么不生效  有什么不一样   多视图
+2. requirejs 为什么不生效呢? angular.bootstrap为什么会报模块找不到错误? 
+   原来时define使用格式有错误  真是一个让人哭泣的错误
+   define([], function(){})

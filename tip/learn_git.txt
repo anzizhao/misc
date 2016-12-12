@@ -1,0 +1,36 @@
+git checkout . 取消本地修改
+能否使用grunt 自动化更新
+
+Fri May 29 10:57:59 CST 2015
+1 经验之谈   .git目录只在项目根目录有   子目录有的话  需要删除  不然添加
+             push 服务器后  需要在服务器merge  有的编写脚本完成自动部署 
+
+
+
+
+1 git clone / git init , git add 
+ 
+2 git commint -av 
+
+3 git checkout -b newbranchnanme  / git checkout / git merge   
+
+4 git fetch / git merge  === git pull
+
+
+
+git checkout develop
+git pull origin develop
+开发....
+git add -A
+git commit -av
+写修改日志
+git push origin develop:develop
+||
+git push origin develop
+
+
+
+
+
+
+

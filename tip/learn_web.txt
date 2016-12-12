@@ -1,0 +1,33 @@
+Wed Jun 17 09:36:34 CST 2015
+1. javascript 时间中断  是在当前线程完成后,才能够执行中断回调
+    http://segmentfault.com/a/1190000002915152 
+
+
+Thu Jun 18 10:13:52 CST 2015
+
+1. 事件, 
+    事件处理分类,
+    1 冒泡   由具体到基础
+    2. 事件捕获   由基础到具体
+    3. Dom2事件流捕获, 先捕获,处于目标阶段, 再冒泡, 一个反向抛物线  
+2. 闭包(解答了javascript奇怪的语法) http://segmentfault.com/a/1190000002911145(总结得简单易懂)
+    Lift效应
+         在引用函数外部变量时，函数执行时外部变量的值由运行时决定而非定义时
+    
+分类
+   a. html事件处理 onClick()
+   b. Dom0事件处理      
+     btn_dom0.onclick= function(){
+       alert("DOM0 events处理程序!");
+     }
+   c. Dom2事件处理
+btn_dom2.addEventListener("click",hander,false);
+//三个参数分别是,
+//事件:click,
+//处理函数hander(),
+//false表示在事件冒泡中调用处理hander()函数,ture表示在事件捕获阶段调用
+
+3. template 在html文件里需要用id区分  当分成不同的html文件  究可以使用id
+
+1. 动态生成网页问题: 1 网页没有生成  渲染的js代码会没有效果  时机是比较重要的 
+

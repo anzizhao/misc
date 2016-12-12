@@ -1,0 +1,6 @@
+1. 解释self total time意思
+
+http://stackoverflow.com/questions/7127671/difference-between-self-and-total-in-chrome-cpu-profile-of-js
+
+
+http://www.html5rocks.com/en/tutorials/developertools/revolutions2013/?redirect_from_locale=zh

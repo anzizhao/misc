@@ -1,0 +1,271 @@
+
+Thu Jul 16 10:16:40 CST 2015
+1. karma 测试 用例补全
+    $scope.$apply()的问题 测试的代码跟网页代码有什么不一样呢? 
+2. 每日新技术  vim dialy 插件  calendar-vim 
+3.  
+4. cookie生成时间设置; logout; 浏览器缓冲问题,uri请求增加时间戳? exapmle: requirejs?2ddddd; grunt 自动生成min和js(发布) 
+5.本地缓存  :
+Tue Jul 14 09:46:03 CST 2015
+1. karma测试 添加karma-coverage, jasmine-group, junit-reporter, 研究一下nodejs的调试(node-inspector)
+    a. 花费较多时间在requirejs与group的合用上(没有执行),结果原来是jasmine-group实现有点问题,执行分组的机会有问题. 花费较多时间找出问题,过程学习一下nodejs的调试. 
+    b. jasmine 与 requirejs合用
+    c. karma junit reporter outputFile不生效问题
+2. 每日新技术
+4. cookie生成时间设置;
+
+
+
+Fri Jul 10 10:08:08 CST 2015
+1. 每日新技术
+2. karma测试
+3. jekyll 
+4. cookie生成时间设置; logout; 浏览器缓冲问题,uri请求增加时间戳? exapmle: requirejs?2ddddd; grunt 自动生成min和js(发布) 
+5.本地缓存  :
+
+
+Thu Jul  9 11:30:27 CST 2015
+1. 每日新技术
+    RestFul 实践建议
+2.jekyll
+3.本地缓存
+4.karma测试  e2e测试 单元测试分组 下午开始 尝试编写karma测试 一直在摸索 花费较多时间, 主要是使用requirejs后 整个变得复杂. 
+   需要在karma.conf配置文件包含库的路径; 测试的配置文件开始的路径是以/base开始的; test-main的path需要配置,跟自己的一样,后面看一下能否使用那个
+5. cookie生成时间设置; logout; 浏览器缓冲问题,uri请求增加时间戳? exapmle: requirejs?2ddddd; grunt 自动生成min和js(发布) 
+
+
+Wed Jul  8 09:36:10 CST 2015
+1. 每日新技术
+2.  jekyll
+3.本地缓存
+4. karma测试  e2e测试
+done 5. 分页显示
+
+
+
+Tue Jul  7 09:44:18 CST 2015
+done 1.获取所有 分页显示 80% 
+明天还有点小细节 
+2.jekyll   浏览查看
+
+3.本地缓存
+4. karma测试  e2e测试
+
+
+Mon Jul  6 09:52:45 CST 2015
+done << 1.获取所有 分页显示 80% 
+2.jekyll 
+3.本地缓存
+4. karma测试  e2e测试
+
+
+Fir Jul  2 
+1. common utility 组建使
+done 基本完成
+2. karma测试  e2e测试
+3. 本地缓存 
+4. 
+5. jekyll
+
+Thu Jul  2 14:19:37 CST 2015
+昨天没有记录 直接就研究动态接在 动态注入的问题 
+1. 动态加载的完成 推上去 done
+2. 本地缓存
+3. jekyll
+done 4. angular 规范文档阅读
+5. 每日新技术:
+    protoType 给对象添加这个属性  之前生成的实例都会增加相关属性, angular的resource使用该技术生成$符号
+完成:
+1. 
+
+Tue Jun 30 10:16:06 CST 2015
+
+1. requirejs 再研究
+      creative基本完成,还有问题需要修改
+            1. 偶然会出现加载失败的问题
+            2. 网页加载处理较慢
+            3. 使用require动态加载渲染插件
+2. angular 自动化测试研究 简单的查看一下
+3. 每日技术学习
+4. angular 规范文档阅读   两天  
+
+Mon Jun 29 10:42:08 CST 2015
+1. 网站js加载学习
+2. angular自动化测试研究 
+3. 每日技术学习 
+4. jeklly
+5. angular 规范文档阅读
+Fri Jun 26 10:05:23 CST 2015
+done 1. surround.vim 安装研究 
+2. 将接口加到creative里面
+3. jekyll的研
+4. 网站js加载学习
+Thu Jun 25 09:59:48 CST 2015
+1. 每日新技术: 前端重构 forEach 处理的数组  apply()函数 
+
+    apply:方法能劫持另外一个对象的方法，继承另外一个对象的属性.
+    http://blog.csdn.net/myhahaxiao/article/details/6952321
+
+done 2.接口使用cookie 存储 或者localstroage 
+3.jekyll的研究 (花费多点时间) 
+4. vim javascript插件查找  跳转   
+        仔细研究一下  tern_for_vim  挺好的.  只要配置一下工程文件(.tern_for_vim)
+         TernDef 跳到定义的位置  TernRefs 列出引用的地方   TernType 定义的属性   TernDoc 说明的地方
+   建立javascript库 不需要建立库  tern_for_vim 是会检查本地的 
+   tagbar 和 jsctags的使用  可以有个侧栏显示 
+   暂时可以满足需求了. (nice job)
+
+
+疑问:
+    property直接调用function只会得出一个结果,而使用function 设置函数的话,就成property的方法.
+
+Wed Jun 24 10:25:10 CST 2015
+done 1. ping 接口调试 和 form_data问题 
+
+2. 每日新技术:
+       cookie 学习
+       wiki cookie的内容 
+3.jekyll的研究  
+4. 
+
+疑问: 
+1. function xxx() vs  var xxx = function  两种形式有什么不一样呢?
+function declaration vs function expression, hoisted(前置), 建议使用fe, 这是在使用才初始化body,google style 也建议使用这个   
+2. xxxx : function(){},  property's value can be a function . it is a property of obj.
+插入:
+1. 安装office 2010
+
+Tue Jun 23
+1. 每日新技术: 
+2. 遇到技术问题: CORS 跨网络请求 
+Fri Jun 19 09:55:33 CST 2015
+done 1. 每日新技术:
+    nginx  发音engineer 发现商业版  nginx plus
+
+done 2. ngDialog 的不同视图的显示效果测试(续)   done 
+
+     昨天路由测试  今天效果测试 
+3. jekyll的研究 
+done 4. vim  javascript angular 自动跳转插件寻找 缩进查找 
+        自动缩进问题完成  安装vim-javascript
+ 
+5. angular service研究  
+        1. 查看官网的例子   github下载例子  mongodb  nodejs服务器 
+6. postman oa组的url接口
+7. services vs factory vs provider
+http://stackoverflow.com/questions/15666048/service-vs-provider-vs-factory
+增加:
+1. resetful 架构
+
+
+后续: 
+    ui-router的加强了解  
+
+Thu Jun 18 09:52:35 CST 2015
+1. angular service研究 
+2. ngDialog 的不同视图的显示效果测试
+    1. 这个花费大量时间  view 路由问题 
+3. jekyll的研究 
+4. vim  javascript angular 自动跳转插件寻找
+5. 每日新技术:
+       
+
+Wed Jun 17 10:06:44 CST 2015
+任务:1. (2) 弹窗 动态渲染效果 使用运行demo 几种不同的对话框的
+            ngDialog   分析完成 
+     2. angular service研究  
+        1. 查看官网的例子   github下载例子  mongodb  nodejs服务器 
+2. 网站分析  ng-grid  svg  
+3. vim 补全插件的研究   
+    YouCompleteMe  tern_for_vim的使用
+    网上查看别人的vim_conf文件, 还要tern_for_vim 官网
+
+
+Tue Jun 16 10:08:03 CST 2015
+1.任务  1. creative布局登录那块屏幕缩进的问题 nav字体跟背景颜色的问题  done
+        2. sb-admin nav 改为fix-top   done  
+        3. 弹窗 动态渲染效果 done
+        4. angular service研究  
+2. 每日新技术:
+    gcor 神经网络  图片识别技术 下载一个demo  能够运行下一步就是整理需求
+3. 网站分析  ng-grid  svg  
+
+4. vim编写代码没有模板补全?  模板的补全 查看tern_for_vim youCompleteMe 没有什么结果  
+    简单的编辑模式下  C-p 和 C-n  当前文档的上下文补全   SupperTab  tab自动按照上次补全
+
+当日任务总结:
+    计划4个任务  完成2个.  弹窗其实也在研究中,由于培训在计划外,花掉2小时 情理之中 
+    总评: 良好
+    研究的没有明确目标的 查看过的就算是完成
+
+
+
+
+Mon Jun 15 09:55:38 CST 2015
+1. 网站分析  ng-grid  svg  
+2. 网站任务完成   done 
+    a. Tables 页的添加 
+    b. 导航栏的view的使用  
+3. 每日新知识学习  linux 命令  locate 查找某个文件 目录 具体路径 done
+4. google 技术的了解
+5. vim编写代码没有模板补全?  模板的补全 查看tern_for_vim youCompleteMe 没有什么结果  
+
+问题:
+    1. 查看一个新技术  安装插件 什么都成功率比较底
+
+
+3. 
+Fri Jun 12 11:30:23 CST 2015
+1. 每日一网站分析  主题: 路由和状态路由 前面两个需要补回来  done
+2. vim 编写代码 
+3. 输入法的切换设置 done 换为C-S作输入法的切换 系统输入法怎么选择 好像是使用python3的原因 暂不深究
+4. vim 快捷键的和主题更换 done  vim bundle的学习  更换 可是效果不理想
+
+
+Thu Jun 11 11:06:40 CST 2015
+1 完成任务2   done 
+* 2 每日一网站分析  2个  主题为: ng-grid  svg 
+3 vim 编写代码 
+
+
+
+Wed Jun 10 10:02:32 CST 2015
+1. 完成网站的路由跳转   路由跳转成功 
+2. 每日一网站  主题: angular  路由 再分析  (没有完成)  done
+3. vim 编写代码  
+
+
+Tue Jun  9 09:59:07 CST 2015
+1 每日一网站  主题: angular 
+2 vim 编写代码技巧  中 
+3 webstrom 技巧学习 
+4
+
+Fri Jun  5 11:06:58 CST 2015
+1 温习之前所看的网站   复习已看技术 
+2 每日一网站 分析   主题: angular bootstrap 
+3 vim 编写代码 浏览工程技巧积累   ctags  Tlist  nerdtree   跳转 
+
+
+
+
+Thu Jun  4 09:46:15 CST 2015
+1 完成每日一网站 分析
+    angular-shop-demo 的查看  和 angularjs-cart  网站的查看  逻辑  
+           angular-shop-demo 
+           商品目录(列表) 
+           购物车显示  
+           支付  
+           支付确认          
+             数据逻辑   商品列表(商品数组)和购物车(商品和数目组成数组) 两个需要全局 挂在$scope下      关于这个两个数组的业务逻辑 
+
+          angularjs-cart 
+          商品列表
+          商品展示
+          购物车页面  使用提交表单方式  
+          支付 
+            数据逻辑      数据是在service里 dataServer 比较合理 最后还是挂在$scope里 
+
+15.5.22
+
+   1 Angular 例子运行  

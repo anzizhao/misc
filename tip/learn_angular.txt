@@ -1,0 +1,151 @@
+
+Tue Jun 23 10:54:25 CST 2015
+1. $resource(url, paramDefault, actions, option)
+paramDefault: Default values for url parameters. These can be overridden in actions methods
+params: 为url的参数  只对url作用 
+
+
+Fri Jun 19 10:27:56 CST 2015
+1. ui-router的多视图问题 url:"", 就是url要填写准确
+Thu Jun 18 15:01:06 CST 2015
+1. ui-router 需要配置准确路由后  才会生成由ui-serf 生成href
+
+
+
+Mon Jun 15 15:07:35 CST 2015
+
+1. angular.element 使用jquery的方式访问DOM元素
+2. metisMeau插件可用于收缩ul
+3. 为什么templateUrl不能粘帖到有name的view上？ 特性， 需要绑定有名字的view或者多view需要用到views
+   路由url不对  导致不对, url:"" 表示使用父类的路由  
+   得到一个重要的经验:
+    1. 
+
+Fri Jun 12 15:35:57 CST 2015
+疑问:
+ngRoute是否实现状态路由的子目录功能, 状态路由也是通过子模块
+ngRoute                  ui-route
+ 
+1. 指定路由时 可以指定一个resolve用于在网页生成前处理事情 https://docs.angularjs.org/api/ngRoute/service/$route
+ $routeProvider
+    .when('/Book/:bookId', {
+        templateUrl: 'book.html',
+        controller: 'BookController',
+        resolve: {
+                // I will cause a 1 second delay
+                    delay: function($q, $timeout) {
+                    var delay = $q.defer();
+                    $timeout(delay.resolve, 1000);
+                    return delay.promise;
+                    }
+            }
+        }
+        resolve - {Object.
+<string, function>=} - An optional map of dependencies which should be injected into the controller.
+ If any of these dependencies are promises, the router will wait for them all to be resolved or one to be rejected before the controller is instantiated.
+ If all the promises are resolved successfully, the values of the resolved promises are injected and $routeChangeSuccess event is fired.
+ If any of the promises are rejected the $routeChangeError event is fired.
+  resolve 可以做一些生成视图前的操作  且会inject到controller里面, 被controller所用
+
+2.$route的current属性 包含当前路由的信息 templateUrl  controller(scope.name) params 
+
+3.angular 内置的服务多数都用provider 例如$routeProvider $templateProvider $controllerProvider, 动态生成服务
+  
+4 具体$routerProvider使用方法, 函数when otherwise,when(path, route(templateUrl, controller, controller as, resvolve, redirectTo )), 
+5 scope  
+
+6  ui-router提供的例子  包含比较复杂的视图  一个状态下的多视图 子图里的view可能贴到不同的target的上
+
+
+Thu Jun 11 11:03:04 CST 2015
+creative 和 sb-admin一起任务
+疑问:
+ 1 使用view生成的网页  跟样式原来的不一样  
+        ng-view 需要增加class 设置height=100%
+ 2 loginin网页添加返回
+         
+ 3 跳转loginin页面后  位置为原来的位置 
+     1 输入autofocus  2 浏览器记住位置 
+
+
+
+Tue Jun  9 09:58:19 CST 2015
+知识点的温故:
+1 网页固定导航栏 滚动过header后  显示出来  否则隐藏
+     使用opacity 透明属性   滚动滚动条 header滚去后(如何判断滚动)  将导航栏显示出来   
+     thinkster.io  使用angular scroll
+   function c() {
+                                     var e;
+                                                                           e = a ? u[0].scrollTop : n(), !o.hasClass("ui-scrollfix") && e > i.uiScrollfix ? o.addClass("ui-scrollfix") : o.hasClass("ui-scrollfix") && e < i.uiScrollfix && o.removeClass("ui-scrollfix")
+                                                                                                           }
+
+Mon Jun  8 11:08:37 CST 2015
+thinkers.io
+
+1 controller to controller communicate through service.  
+
+       Using Services to Share Data Between Controllers
+2 $q 延迟同步操作  操作函数return $q(function(resolve, reject){延时的操作,根据操作结果,调用resolve 还是reject})  
+  对延时操作函数调用then,对结果进行下一步操作, 操作可根据结果分成功,失败,最终. 延迟链, 可以为延迟后进行的一系列操作
+
+3 angular 官网developer guide有大量资源, thinkster.io里面教程 比较实际 
+  https://thinkster.io/a-better-way-to-learn-angularjs/
+
+4 controller 概念: The role of controllers in Angular is to expose data to our view via $scope, and to add functions to $scope that contain business logic to enhance view behavior. 
+
+5 services 概念: Services provide an easy way for us to share data and functionality throughout our app. The services we create are singletons that can be injected into controllers and other services, making them the ideal place for writing reusable code.
+
+6 angular的form 可以做一些校验 ng-model-options可以对输入做一些延迟 失焦才确定输入 可以custom一些validator,其实为一些director
+  $asyncValidators同步的判读 form.name.$pending.username  正则表达式的校验 总的来是说 填写表单的一些校验
+    
+7 directive 指令概念:  With directives, you can create custom, reusable components for your application that make developing interactive UI widgets drastically easier
+ 
+   .directive("leaving", function(){
+    return func(scope, element, attrs) {
+          element.bind("mouseleave", function(){
+                  element.removeClass(attrs.entering);
+                        })
+                            }
+                            });
+    talk to controller, scope.$apple(attrs.some)
+    communicate to directive,  查看tabs例子    tabset和tab  index.html文件
+    <tabset><tab heading="tab 1"></tab></tabset>  tab requires ^tabset 调用addTab将自己添加   tabset拥有的操作为addTab和selectedTab
+    猜想: angular 嵌套语法解释为由里到外   先解释tab  tab将自己添加到tabset里   再解释 tabset   ;  nav nav-tabs
+
+8 compiler ,use with directive 
+   How directives are compiled
+   It's important to note that Angular operates on DOM nodes rather than strings. Usually, you don't notice this restriction because when a page loads, the web browser parses HTML into the DOM automatically.
+
+
+Fri Jun  5 11:13:56 CST 2015
+1  swipe-to-remove 工程 重点
+   directive插件分析  用到技术$swipe.bind(坐标变化 item显示变化) $watch proceed变量  true为swipe flase为no swipe. 
+   上层的remove事件  主要将数组项删除  angular框架将页面对应删除 
+
+2 使用angular的网站不能用wget抓取 
+
+3 angular-swing 是一个比较有趣的插件  卡牌抽取  可以游戏物品的排放 或者其他有趣的功能  
+    使用这个插件的动态效果需要个人编写 transform translate 靠这个css完成元素界面的移动旋转等效果 
+
+4 
+
+
+
+Thu Jun  4 09:54:58 CST 2015
+1 
+
+
+Wed Jun  3 10:24:40 CST 2015
+1 angular 网站通常为ng-view  
+2 可用$location使用url变化  导致触发路由
+3 ng-pluralize 根据值不一样  显示不一样  可做单复数显示用 
+4 http://daha.github.io/angularJS-github-contributors/
+   分析该网站   
+     有趣事情  通过github接口获取json 查询angularJS相关内容  https://api.github.com/:query/:user/:repo/:spec
+5 学习两个比价有趣的功能 angular-swipe 和 angular-swing ,可以使用这个完成拖动效果   有一个例子使用ngTouch 和 animate达到swipe控件
+  效果的
+
+
+
+
+1 two way data-binding :

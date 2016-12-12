@@ -1,0 +1,25 @@
+
+karma 测试
+1. 配合requirejs使用,路径配置上导致走了弯路,一步一步地测试出来的(好艰辛)
+    Todo:   .require-config.js 和 test-main.js的requirejs配置内容相似,是否应该合并在一起? 
+
+2. karma的测试内容逻辑
+    a. require 加载是否成功
+    b. controller的内容 是否正确
+    c. 出测试报告
+    疑问: 1. $httpend怎么使用? userManage怎么请求接口怎么测试
+          2. 单元测试和end-to-end测试
+
+    
+    
+
+
+单元测试的策略:
+    1.请求是否被发送  2.让程序按照预期的请求,相应
+
+During unit testing, we want our unit tests to run quickly and have no external dependencies so we don’t want to send XHR or JSONP requests to a real server. All we really need is to verify whether a certain request has been sent or not, or alternatively just let the application make requests, respond with pre-trained responses and assert that the end result is what we expect it to be.
+                            from: https://docs.angularjs.org/api/ngMock/service/$httpBackend
+
+    2.http请求都不是真正的请求.  模拟请求服务
+    下面例子的  使用resolve模拟的请求服务
+    http://plnkr.co/edit/RrUa97ulojjDuxYZhU72?p=preview
